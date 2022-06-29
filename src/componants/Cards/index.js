@@ -3,22 +3,6 @@ import { motion } from "framer-motion";
 import Yearly from "./Yearly";
 import Monthly from "./Monthly";
 export default function Cards() {
-  // const Data = [
-  //   [
-  //     {
-  //       description: <Monthly />,
-  //       title: "Money",
-  //     },
-  //   ],
-  //   [
-  //     {
-  //       description: <Yearly />,
-  //       title: "Supporting",
-  //     },
-  //   ],
-  // ];
-  // How can this be done without passing into context?
-
   const [isOnCard, setIsOnCard] = useState(false);
 
   const toggleSwitch = () => setIsOnCard((prev) => !prev);

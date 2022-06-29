@@ -35,9 +35,9 @@ export default function Blog({ posts }: Props) {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
             <span className="text-[#169CF9]">How It Works</span>
@@ -69,7 +69,7 @@ export default function Blog({ posts }: Props) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2">
         {posts.map((post) => (
-          <Link key={post._id} href={`/post/${post.slug.current}`}>
+          <Link key={post._id} href={`/post/${post.slug.current}`} passHref>
             <div className="">
               <img
                 src={urlFor(post.mainImage).url()!}
