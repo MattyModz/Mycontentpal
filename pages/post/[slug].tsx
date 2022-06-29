@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import { sanityClient, urlFor } from "../../sanity";
+import { sanityClient } from "../../sanity";
 import { Post } from "../../typings";
 
 interface Props {
@@ -67,3 +67,5 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     revalidate: 60000,
   };
 };
+
+//  urlFor;
