@@ -12,7 +12,7 @@ export default function Linkprocess1() {
               </div>
               <img
                 class="mx-auto object-cover rounded-lg lg:-ml-10 transform z-40 -translate-y-20"
-                src="https://cdn.devdojo.com/images/february2022/guy-character.png"
+                src="./AlexChapman.jpg"
                 alt=""
               />
             </div>

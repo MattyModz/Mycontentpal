@@ -11,7 +11,6 @@ export default function product() {
           <Serviceslider />
         </Container>
       </div>
-      <Content />
     </>
   );
 }

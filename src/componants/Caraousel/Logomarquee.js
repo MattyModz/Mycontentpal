@@ -1,10 +1,10 @@
 import Marquee from "react-fast-marquee";
 
 const data = [
-  { img: "./logo.svg" },
-  { img: "./logo.svg" },
-  { img: "./logo.svg" },
-  { img: "./logo.svg" },
+  { img: "./Digitaloft.svg" },
+  { img: "./Searcharoo.png" },
+  { img: "./SeoPartners.svg" },
+  { img: "./ArtPrintsVicky.png" },
   { img: "./logo.svg" },
 ];
 

@@ -7,7 +7,7 @@ interface Props {
 
 export default function Blog({ posts }: Props) {
   return (
-    <div className="  test s:h-screen bg-blue-400 text-white mb-8">
+    <div className="  test s:h-screen bg-body-dark text-white mb-8 ">
       <section className="mx:auto s:h-full   px-8 container lg:w-3/4 s:w-full lg:text-8xl text-5xl font-inter -mt-40 pt-64 pb-32 text-center">
         <div className="font-inter  ">
           High-quality content{" "}

@@ -20,13 +20,13 @@ export default function Test() {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper  bg-[url('/pattern.svg')]  "
+        className="mySwiper  bg-blue-400 "
       >
         <SwiperSlide>
-          <Linkprocess2 />
+          <Linkprocess1 />
         </SwiperSlide>
         <SwiperSlide>
-          <Linkprocess2 />
+          <Linkprocess1 />
         </SwiperSlide>
         <SwiperSlide>
           <Linkprocess2 />

@@ -14,8 +14,10 @@ export default function Cards() {
   };
 
   return (
-    <section className="bg-body-dark">
-      <h2 className="text-white font-inter text-4xl">Content Subscription</h2>
+    <section
+      className="bg-body-dark   
+      "
+    >
       <div className="w-full container px-8">
         <div>
           <div className="flex  justify-start py-4">
