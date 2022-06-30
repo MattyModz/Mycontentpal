@@ -23,7 +23,7 @@ export default function Test() {
         className="mySwiper  bg-blue-400 "
       >
         <SwiperSlide>
-          <Linkprocess1 />
+          <Linkprocess2 />
         </SwiperSlide>
         <SwiperSlide>
           <Linkprocess1 />

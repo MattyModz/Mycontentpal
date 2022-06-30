@@ -9,16 +9,16 @@ const Serviceslider = () => {
   const Data = [
     [
       //the data you have used, you just have to change data here if you need
-      { price: "0.01", words: 1000 },
-      { price: "0.01", words: 5000 },
-      { price: "0.01", words: 10000 },
-      { price: "0.01", words: 20000 },
-      { price: "0.01", words: 25000 },
-      { price: "0.01", words: 50000 },
-      { price: "0.01", words: 75000 },
-      { price: "0.01", words: 100000 },
-      { price: "0.01", words: 150000 },
-      { price: "0.01", words: 200000 },
+      { price: "0.06", words: 1000 },
+      { price: "0.06", words: 5000 },
+      { price: "0.06", words: 10000 },
+      { price: "0.06", words: 20000 },
+      { price: "0.06", words: 25000 },
+      { price: "0.06", words: 50000 },
+      { price: "0.06", words: 75000 },
+      { price: "0.06", words: 100000 },
+      { price: "0.06", words: 150000 },
+      { price: "0.06", words: 200000 },
     ],
 
     [
@@ -28,7 +28,7 @@ const Serviceslider = () => {
       { price: "0.09", words: 10000 },
       { price: "0.09", words: 20000 },
       { price: "0.08", words: 25000 },
-      { price: "0.07", words: 50000 },
+      { price: "0.08", words: 50000 },
       { price: "0.06", words: 75000 },
       { price: "0.06", words: 100000 },
       { price: "0.05", words: 150000 },
@@ -37,7 +37,7 @@ const Serviceslider = () => {
   ];
 
   return (
-    <div className="flex  justify-center bg-[url('/pattern.svg')]  ">
+    <div className="flex  justify-center   ">
       <div className="flex-column justify-content justify-center w-full xl:w-1/2  ">
         {/* for getting price from array */}
         <div className="text-center  mb-12">
@@ -102,12 +102,12 @@ const Serviceslider = () => {
         {/* for getting words from array */}
         {/* for getting url from array */}
         <div className="flex justify-between">
-          <h4 className="fade-in-text font-bold  sm:text-l  md:text-4xl  text-[#FB7F64] p-5 rounded-xl ">
+          <h4 className="fade-in-text font-bold text-3xl lg:text-4xl  text-[#FB7F64] p-5 rounded-xl ">
             ${Data[dataValue][value].price} per word
           </h4>
 
-          <h4 className="   font-bold pb-5     sm:text-l md:text-5xl text-[#FB7F64] p-5 rounded-xl ">
-            $5000
+          <h4 className="   font-bold pb-5 lg:text-4xl  text-3xl text-[#FB7F64] p-5 rounded-xl ">
+            ${Data[dataValue][value].price * Data[dataValue][value].words}
           </h4>
         </div>
         <div className="mb-8">

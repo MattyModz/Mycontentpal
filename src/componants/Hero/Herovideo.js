@@ -27,7 +27,7 @@ export default function Herovideo() {
             </div>
             <motion.img
               src="https://cdn.devdojo.com/images/march2021/dashboard-img.png"
-              class="z-10 lg:w-2/8 lg:h-2/8 "
+              class="z-10  "
             />
           </div>
         </motion.div>

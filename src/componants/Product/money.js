@@ -16,9 +16,9 @@ export default function Money() {
         },
       }}
     >
-      Every website needs solid SEO foundations and for that, you need to create
-      high-quality, well researched content. We can happily take that burden off
-      your hands.
+      Targeting buying keywords, Money Content is high-quality, well-researched,
+      persuasive content which will convince your readers to buy what you’re
+      trying to sell at the price you’re selling it.
       <br />
       <br />
     </motion.h1>

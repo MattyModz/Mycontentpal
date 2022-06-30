@@ -11,10 +11,29 @@ export default function Nav() {
 
   // bg-[#169CF9]
 
+  const [show, setShow] = useState(true);
+
+  const controlnav = () => {
+    if (window.screenY > 100) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlnav);
+    return () => {
+      window.removeEventListener("scroll", controlnav);
+    };
+  }, []);
+
   return (
     <nav
       style={Z_INDEX}
-      className="bg-body-dark w-full select-none  sticky top-0 "
+      className={`nav nav_hide bg-body-dark w-full select-none  sticky top-0 ${
+        show && "nav_hide"
+      } `}
     >
       <div className="flex  items-center  justify-between  h-20   py-2 mx-auto max-w-7xl md:h-20 sm:box-content">
         <div className="flex items-center  ">
@@ -84,7 +103,11 @@ export default function Nav() {
               <li
                 className="text-white s:text-2xl s:py-4 lg:text-l mb-8  font-bold cursor-pointer   sm:hidden block"
                 onClick={() => ShowMenu((state) => !Menu)}
-              />
+              >
+                <Link href={"/blog"} passHref>
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

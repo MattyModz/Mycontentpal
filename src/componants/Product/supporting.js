@@ -16,10 +16,9 @@ export default function Supporting() {
         },
       }}
     >
-      Every website needs solid needs supporting content. If you're only pushing
-      commercial content, you're likely going to run into some issues. This
-      service is best for content like guest posts, supporting articles, meta
-      descriptions etc.
+      Targeting informational keywords, Supporting Content is well-researched,
+      top-quality content that aids the success of your additional features by
+      building authority and relevance.
     </motion.h1>
   );
 }
