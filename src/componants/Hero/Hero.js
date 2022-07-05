@@ -3,11 +3,13 @@ import Herovideo from "./Herovideo";
 const Heroopen = () => {
   return (
     <>
-      <div className="bg-body-dark  s:h-screen text-white mb-8">
+      <div className="bg-body-dark  s:h-screen text-white ">
         <section className="mx:auto s:h-full bg-body-dark   px-8 container lg:w-3/4 s:w-full lg:text-8xl text-5xl font-inter -mt-40 pt-64 pb-32 text-center">
           <div className="font-inter  ">
             High-quality content{" "}
-            <span className="text-orange-500">that doesnt break the bank</span>
+            <span className=" bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877]">
+              that doesnt break the bank
+            </span>
           </div>
           <p class="relative font-interr justify-center flex z-20  mt-6 text-base text-white xl:text-xl  sm:text-center lg:text-center ">
             Content researched prepped and delievered faster than you can say

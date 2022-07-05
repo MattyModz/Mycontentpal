@@ -5,8 +5,7 @@ export default function Body() {
   return (
     <>
       <Sectionthree />
-      {/* <Sectionone />
-      <Sectiontwo /> */}
+      <Sectionone />
     </>
   );
 }

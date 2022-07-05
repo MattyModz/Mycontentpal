@@ -179,12 +179,3 @@ iframe[src*="vimeo"] {
   background-color: #169cf9;
   border-radius: 20px;
 }
-
-.dot-bg {
-  background-size: 4px 4px;
-
-  background-image: radial-gradient(transparent 1px, #1f2937 1px);
-  background-repeat: initial;
-  backdrop-filter: blur(3px);
-  z-index: 999;
-}

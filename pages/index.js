@@ -4,8 +4,11 @@ import Product from "../src/componants/Product";
 import Body from "../src/componants/body";
 import Cards from "../src/componants/Cards";
 import Test from "../src/componants/Testamonial/Testamonial";
+import Blogcard from "../src/componants/Blog";
+import { sanityClient } from "../sanity";
+import TLBHome from "../src/componants/TLBhome";
 // import TLBHhome from "../src/componants/TLBhome";
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <>
       <Hero />
@@ -14,54 +17,35 @@ export default function Home() {
 
       <Product />
       <Tweets />
-      <div className="sm:block hidden">
+      {/* <div className="sm:block hidden">
         <Test />
-      </div>
+      </div> */}
       <Cards />
 
-      {/* <div className="">
-        <Reviews reviews={customerreview} />
-      </div>
-      <div className="px-4">
-  
-      </div> */}
-      {/* 
-      <FAQ /> */}
-      {/* 
-      <Container>
-        <h3 className="mt-16  bg-clip-text bg-gradient-to-br from-logo-pink via-fuscia-800 to-purple-600   justify-center  pb-5 text-5xl font-extrabold  text-transparent sm:text-5xl sm:text-6xl md:text-7xl ">
-          Keep Upto date
-        </h3>
-        <Bcomp1 posts={posts} />
-      </Container> */}
+      <Blogcard posts={posts} />
     </>
   );
 }
 
-// export async function getStaticProps() {
-//   const { data: review } = await client.query({
-//     query: REVIEWS,
-//   });
-//   const { data: post } = await client.query({
-//     query: BLOG_COMP,
-//   });
+export const getServerSideProps = async () => {
+  const query = `*[_type == "post"][0..0]{
+  _id,
+  title,
 
-//   return {
-//     props: {
-//       customerreview: review.reviews.nodes,
-//       posts: post.posts.nodes,
-//     },
-//     revalidate: 10,
-//   };
-// }
+  author -> {
+  name,
+  image
+},
+description,
+mainImage,
+slug
+}`;
 
-//  <Container className="">
-//    <Charting />
-//  </Container>;
+  const posts = await sanityClient.fetch(query);
 
-// <h1>React Accordion Demo</h1>
-//     <div className="accordion text-white">
-//       {accordionData.map(({ title, content }) => (
-//         <Accordion title={title} content={content} />
-//       ))}
-//     </div>
+  return {
+    props: {
+      posts,
+    },
+  };
+};

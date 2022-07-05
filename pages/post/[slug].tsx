@@ -1,39 +1,82 @@
 import { GetStaticProps } from "next";
-import { sanityClient, urlFor } from "../../sanity";
+import {
+  getClient,
+  sanityClient,
+  urlFor,
+  usePreviewSubscription,
+} from "../../sanity";
 import { Post } from "../../typings";
 import { motion } from "framer-motion";
 import PortableText from "react-portable-text";
+import Link from "next/link";
 interface Props {
   post: Post;
 }
 
-function Post({ post }: Props) {
-  console.log(post);
+function filterDataToSingleItem(data, preview) {
+  if (!Array.isArray(data)) {
+    return data;
+  }
+
+  if (data.length === 1) {
+    return data[0];
+  }
+
+  if (preview) {
+    return data.find((item) => item._id.startsWith(`drafts.`)) || data[0];
+  }
+
+  return data[0];
+}
+
+function Post({ data, preview }) {
+  const { data: previewData } = usePreviewSubscription(data?.query, {
+    params: data?.queryParams ?? {},
+    // The hook will return this on first render
+    // This is why it's important to fetch *draft* content server-side!
+    initialData: data?.post,
+    // The passed-down preview context determines whether this function does anything
+    enabled: preview,
+  });
+
+  const post = filterDataToSingleItem(previewData, preview);
+
   return (
     <main className="p-5 mx-auto bg-body-dark text-white">
+      {preview && <Link href="/api/exit-preview">Preview Mode Activated!</Link>}
       <article className="container ">
+        {" "}
         <motion.div
           className=""
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.35 } }}
           viewport={{ once: true }}
         >
-          <h1 className="text-3xl mt-10 mb-3 font-interr font-bold p-5 mx-auto">
-            {post.title}
-          </h1>
-          <h2 className="text-xl font-light text-gray-200 mb-2">
-            {post.description}
-          </h2>
+          {post?.title && (
+            <h1 className="text-3xl mt-10 mb-3 font-interr font-bold p-5 mx-auto">
+              {post.title}
+            </h1>
+          )}
+
+          {post?.description && (
+            <h2 className="text-xl font-light text-gray-200 mb-2">
+              {post.description}
+            </h2>
+          )}
           <div className="flex items-center space-x-2">
-            <img
-              className="h-10 w-10 rounded-full"
-              src={urlFor(post.author.image).url()!}
-              alt=""
-            />
+            {post?.author.image && (
+              <img
+                className="h-10 w-10 rounded-full"
+                src={urlFor(post.author.image).url()!}
+                alt=""
+              />
+            )}
             <p className="font-extralight text-sm">
               Blog post by{" "}
-              <span className="text-orange-600">{post.author.name}</span> -
-              published at {new Date(post._createdAt).toLocaleDateString()}
+              {post?.author.name && (
+                <span className="text-orange-600">{post?.author.name}</span>
+              )}{" "}
+              - published at {new Date(post?._createdAt).toLocaleDateString()}
             </p>
           </div>
         </motion.div>
@@ -49,10 +92,13 @@ function Post({ post }: Props) {
             content={post.body}
             serializers={{
               h1: (props: any) => (
-                <h1 className="text-2xl font-bold my-5" {...props} />
+                <h1 className="text-6xl font-bold my-5" {...props} />
               ),
               h2: (props: any) => (
-                <h1 className="text-xl font-bold my-5" {...props} />
+                <h2 className="text-4xl font-bold my-5" {...props} />
+              ),
+              h3: (props: any) => (
+                <h2 className="text-3xl font-bold my-5" {...props} />
               ),
               li: ({ children }: any) => (
                 <li className="ml-4 list-disc"> {children} </li>
@@ -94,8 +140,11 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const query = `*[_type == "post" && slug.current == $slug][0]{
+export const getStaticProps: GetStaticProps = async ({
+  params,
+  preview = false,
+}) => {
+  const query = `*[_type == "post" && slug.current == $slug]{
     _id,
     _createdAt,
     title,
@@ -109,19 +158,22 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
  body
 }`;
 
-  const post = await sanityClient.fetch(query, {
-    slug: params?.slug,
-  });
+  const queryParams = { slug: params.slug };
 
-  if (!post) {
+  const data = await getClient(preview).fetch(query, queryParams);
+
+  if (!data) {
     return {
       notFound: true,
     };
   }
 
+  const post = filterDataToSingleItem(data, preview);
+
   return {
     props: {
-      post,
+      preview,
+      data: { post, query, queryParams },
     },
     revalidate: 60,
   };

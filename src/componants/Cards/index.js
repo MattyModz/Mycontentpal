@@ -18,7 +18,7 @@ export default function Cards() {
       className="bg-body-dark   
       "
     >
-      <div className="w-full container px-8">
+      <div className="w-full container px-8 pb-6">
         <div>
           <div className="flex  justify-start py-4">
             <p className="p-4 -rotate-6  text-white font-writing">

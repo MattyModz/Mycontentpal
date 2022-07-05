@@ -41,7 +41,9 @@ export default function ProdHeader() {
     <section className="">
       <div class=" ">
         <h3 className="py-12 font-inter text-center text-white text-6xl ">
-          <span className="text-orange-400">{Data[dataValue][0].title}</span>{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877]">
+            {Data[dataValue][0].title}
+          </span>{" "}
           content...
         </h3>
       </div>

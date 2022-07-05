@@ -3,7 +3,6 @@ export default function Sectionone() {
     <>
       <div class="p-8 lg:p-16 flex text-center flex-wrap overflow-hidden">
         <div class="w-full overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 ">
-          <img className="absolute group" src={"./yellow-card.png"} />
           <img className="relative" src={"./desktop-dashboard-full.png"} />
         </div>
         <div class="w-full r overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 ">

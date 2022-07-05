@@ -8,7 +8,7 @@ export default function Herovideo() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
           viewport={{ once: true }}
-          className="relative   px-45 rounded-lg cursor-pointer w-full flex justify-center group xl:px-0"
+          className="relative  lg:hidden   px-45 rounded-lg cursor-pointer w-full flex justify-center group xl:px-0"
         >
           <div class="relative overflow-hidden rounded-md cursor-pointer group -mt-24 ">
             <div class="absolute flex items-center justify-center w-full h-full">

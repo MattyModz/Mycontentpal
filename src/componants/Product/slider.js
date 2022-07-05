@@ -102,11 +102,11 @@ const Serviceslider = () => {
         {/* for getting words from array */}
         {/* for getting url from array */}
         <div className="flex justify-between">
-          <h4 className="fade-in-text font-bold text-3xl lg:text-4xl  text-[#FB7F64] p-5 rounded-xl ">
+          <h4 className="fade-in-text font-bold text-3xl lg:text-4xl  bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877] p-5 rounded-xl ">
             ${Data[dataValue][value].price} per word
           </h4>
 
-          <h4 className="   font-bold pb-5 lg:text-4xl  text-3xl text-[#FB7F64] p-5 rounded-xl ">
+          <h4 className="   font-bold pb-5 lg:text-4xl  text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877] p-5 rounded-xl ">
             ${Data[dataValue][value].price * Data[dataValue][value].words}
           </h4>
         </div>

@@ -4,7 +4,7 @@ import Herovideo from "./Herovideo";
 export default function Hero() {
   return (
     <>
-      <div className="bg-body-dark h-full">
+      <div className=" h-full">
         <Heroopen />
 
         <Herologo />
