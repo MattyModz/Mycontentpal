@@ -9,9 +9,6 @@ import { Post } from "../../typings";
 import { motion } from "framer-motion";
 import PortableText from "react-portable-text";
 import Link from "next/link";
-interface Props {
-  post: Post;
-}
 
 function filterDataToSingleItem(data, preview) {
   if (!Array.isArray(data)) {

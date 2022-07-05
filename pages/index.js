@@ -3,10 +3,10 @@ import Tweets from "../src/componants/Testamonial/tweets";
 import Product from "../src/componants/Product";
 import Body from "../src/componants/body";
 import Cards from "../src/componants/Cards";
-import Test from "../src/componants/Testamonial/Testamonial";
+// import Test from "../src/componants/Testamonial/Testamonial";
 import Blogcard from "../src/componants/Blog";
 import { sanityClient } from "../sanity";
-import TLBHome from "../src/componants/TLBhome";
+// import TLBHome from "../src/componants/TLBhome";
 // import TLBHhome from "../src/componants/TLBhome";
 export default function Home({ posts }) {
   return (
