@@ -21,7 +21,7 @@ export default function Supporting() {
       <p>
         Targeting{" "}
         <RoughNotation type="highlight" show={isOn} color="#FB8951">
-          informational Keywords,
+          informational Keywords
         </RoughNotation>{" "}
         , Supporting Content is well-researched, top-quality content that aids
         the success of your additional features by building authority and
