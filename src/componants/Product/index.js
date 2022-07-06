@@ -5,7 +5,7 @@ import Content from "./content";
 export default function product() {
   return (
     <>
-      <div className="bg-body-dark ">
+      <div className="bg-body-dark  h-screen">
         <Container>
           <ProdHeader />
           <Serviceslider />

@@ -10,7 +10,7 @@ interface Props {
 export default function Blog({ posts }: Props) {
   return (
     <section className=" text-white bg-body-dark font-inerr p-4">
-      <div className="container  lg:grid grid-cols-2   gap-3 ">
+      <div className="container bg-body-dark lg:grid grid-cols-2   gap-3 ">
         {posts.map((post, index) =>
           index === 0 ? (
             <motion.div
@@ -36,7 +36,7 @@ export default function Blog({ posts }: Props) {
               </div>
               <div className="flex flex-col items-start justify-center w-full h-full py-6 mb-6 md:mb-0 md:w-1/2">
                 <div className="flex flex-col items-start justify-center h-full space-y-3 transform md:pl-10 lg:pl-16 md:space-y-5">
-                  <div className="bg-pink-500 flex items-center pl-2 pr-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
+                  <div className="bg-orange-500 flex items-center pl-2 pr-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
                     <svg
                       className="w-3.5 h-3.5 mr-1"
                       fill="currentColor"
@@ -47,7 +47,7 @@ export default function Blog({ posts }: Props) {
                     </svg>
                     <span>Featured</span>
                   </div>
-                  <h1 className="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl">
+                  <h1 className="text-4xl font-bold py-2 leading-none lg:text-5xl xl:text-6xl">
                     <a href="#_">{post.title}.</a>
                   </h1>
                   <p className="pt-2 text-sm font-medium">
@@ -81,8 +81,8 @@ export default function Blog({ posts }: Props) {
                   className="flex rounded-t-xl mb-4"
                 />
               </Link>
-              <div className="bg-purple-500  items-center px-3  py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
-                <span>Lifestyle</span>
+              <div className="bg-orange-400  items-center px-3  py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
+                <span>Content writing</span>
               </div>
               <h2 className="text-lg font-bold sm:text-xl md:text-2xl">
                 {post.title}
@@ -92,7 +92,7 @@ export default function Blog({ posts }: Props) {
                 <a href="#_" className="mr-1 underline">
                   {post.author.name}
                 </a>{" "}
-                · <span className="mx-1">April 17, 2021</span> ·{" "}
+                · <span className="mx-1">April 20th, 2022</span> ·{" "}
                 <span className="mx-1 text-gray-600">3 min. read</span>
               </p>
             </motion.div>
@@ -106,6 +106,7 @@ export default function Blog({ posts }: Props) {
 export const getServerSideProps = async () => {
   const query = `*[_type == "post"]{
   _id,
+    _createdAt,
   title,
 
   author -> {

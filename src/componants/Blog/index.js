@@ -31,7 +31,7 @@ export default function Blogcard({ posts }) {
               </div>
               <div className="flex flex-col items-start justify-center w-full h-full py-6 mb-6 md:mb-0 md:w-1/2">
                 <div className="flex flex-col items-start justify-center h-full space-y-3 transform md:pl-10 lg:pl-16 md:space-y-5">
-                  <div className="bg-pink-500 flex items-center pl-2 pr-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
+                  <div className="bg-orange-500 flex items-center pl-2 pr-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
                     <svg
                       className="w-3.5 h-3.5 mr-1"
                       fill="currentColor"
@@ -50,7 +50,7 @@ export default function Blogcard({ posts }) {
                     <a href="#_" className="mr-1 underline">
                       {post.author.name}
                     </a>{" "}
-                    · <span className="mx-1">April 23rd, 2021</span> ·{" "}
+                    · <span className="mx-1">April 23rd, 2022</span> ·{" "}
                     <span className="mx-1 text-gray-600">5 min. read</span>
                   </p>
                 </div>

@@ -22,8 +22,9 @@ export default function ProdHeader() {
   ];
 
   const { dataValue, setDataValue } = myContext();
+
   console.log(dataValue);
-  const [isOn, setIsOn] = useState(false);
+  const { isOn, setIsOn } = myContext();
 
   const toggleSwitch = () => setIsOn((prev) => !prev);
 
@@ -53,6 +54,7 @@ export default function ProdHeader() {
             Money Content
           </RoughNotation>
         </p>
+
         <div
           className="switch "
           data-isOn={isOn}
@@ -68,7 +70,7 @@ export default function ProdHeader() {
           </RoughNotation>
         </p>
       </div>
-      <div className="text-center lg:text-3xl px-8 font-interr fade-in-text text-white py-2">
+      <div className="text-center lg:text-3xl px-8 font-interr fade-in-text text-gray-100 py-2">
         {Data[dataValue][0].description}
       </div>
     </section>

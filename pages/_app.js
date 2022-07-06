@@ -2,14 +2,14 @@ import "../src/styles/index.scss";
 import { AnimatePresence } from "framer-motion";
 import Footer from "../src/componants/Footer/footer";
 import Header from "../src/componants/Header/header";
-import client from "../lib/apollo";
-import { ApolloProvider } from "@apollo/client";
+// import client from "../lib/apollo";
+// import { ApolloProvider } from "@apollo/client";
 import ContextProvider from "../Context/Context";
 
-import ContextProvidermodal from "../Context/Contextmodal";
+// import ContextProvidermodal from "../Context/Contextmodal";
 
-import { hotjar } from "react-hotjar";
-import { useEffect } from "react";
+// import { hotjar } from "react-hotjar";
+// import { useEffect } from "react";
 
 // import { useRouter } from "next/router";
 // import Loading from "../src/componants/Loading";
@@ -35,27 +35,20 @@ function MyApp({ Component, pageProps, router }) {
   //     setLoadinginit(false);
   //   }, 2300);
   // }, []);
-  useEffect(() => {
-    hotjar.initialize(2944214, 6);
-  }, []);
 
   return (
     <>
       <div>
         <ContextProvider>
-          <ContextProvidermodal>
-            <ApolloProvider client={client}>
-              <Header />
+          <Header />
 
-              <AnimatePresence exitBeforeEnter>
-                {/* <Loading loading={loading} /> */}
+          <AnimatePresence exitBeforeEnter>
+            {/* <Loading loading={loading} /> */}
 
-                <Component {...pageProps} key={router.route} />
-              </AnimatePresence>
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
 
-              <Footer />
-            </ApolloProvider>
-          </ContextProvidermodal>
+          <Footer />
         </ContextProvider>
       </div>
     </>

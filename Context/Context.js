@@ -4,9 +4,9 @@ const Context = createContext({});
 
 const ContextProvider = ({ children }) => {
   const [dataValue, setDataValue] = useState(0);
-
+  const [isOn, setIsOn] = useState(false);
   return (
-    <Context.Provider value={{ dataValue, setDataValue }}>
+    <Context.Provider value={{ dataValue, setDataValue, isOn, setIsOn }}>
       {children}
     </Context.Provider>
   );

@@ -37,7 +37,7 @@ export default function Tweets() {
               >
                 <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
                   <img
-                    src="./Jamesgregory.png"
+                    src="./JamesGregory.png"
                     class="rounded-full mr-3 w-12 h-12"
                   />
                   <div class="relative">

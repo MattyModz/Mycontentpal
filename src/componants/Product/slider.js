@@ -9,30 +9,30 @@ const Serviceslider = () => {
   const Data = [
     [
       //the data you have used, you just have to change data here if you need
-      { price: "0.06", words: 1000 },
-      { price: "0.06", words: 5000 },
-      { price: "0.06", words: 10000 },
-      { price: "0.06", words: 20000 },
-      { price: "0.06", words: 25000 },
-      { price: "0.06", words: 50000 },
-      { price: "0.06", words: 75000 },
-      { price: "0.06", words: 100000 },
-      { price: "0.06", words: 150000 },
-      { price: "0.06", words: 200000 },
+      { price: "0.06", words: 1000, posts: 1 },
+      { price: "0.06", words: 5000, posts: 3 },
+      { price: "0.06", words: 10000, posts: 5 },
+      { price: "0.06", words: 20000, posts: 10 },
+      { price: "0.06", words: 25000, posts: 13 },
+      { price: "0.06", words: 50000, posts: 25 },
+      { price: "0.06", words: 75000, posts: 38 },
+      { price: "0.06", words: 10000, posts: 50 },
+      { price: "0.06", words: 15000, posts: 75 },
+      { price: "0.06", words: 20000, posts: 100 },
     ],
 
     [
       //the data you have used, you just have to change data here if you need
-      { price: "0.11", words: 1000 },
-      { price: "0.11", words: 5000 },
-      { price: "0.09", words: 10000 },
-      { price: "0.09", words: 20000 },
-      { price: "0.08", words: 25000 },
-      { price: "0.08", words: 50000 },
-      { price: "0.06", words: 75000 },
-      { price: "0.06", words: 100000 },
-      { price: "0.05", words: 150000 },
-      { price: "0.05", words: 200000 },
+      { price: "0.11", words: 1000, posts: 1 },
+      { price: "0.11", words: 5000, posts: 3 },
+      { price: "0.09", words: 10000, posts: 5 },
+      { price: "0.09", words: 20000, posts: 10 },
+      { price: "0.08", words: 25000, posts: 13 },
+      { price: "0.08", words: 50000, posts: 25 },
+      { price: "0.06", words: 75000, posts: 38 },
+      { price: "0.06", words: 10000, posts: 50 },
+      { price: "0.05", words: 15000, posts: 75 },
+      { price: "0.05", words: 20000, posts: 100 },
     ],
   ];
 
@@ -42,10 +42,11 @@ const Serviceslider = () => {
         {/* for getting price from array */}
         <div className="text-center  mb-12">
           <h2 className="text-white text-6xl font-bold">
-            {Data[dataValue][value].words}
-            <br /> words
+            {Data[dataValue][value].words} words
           </h2>
-          <p className="py-2 text-white text-xl">Approx. 10 blog posts</p>
+          <p className="py-2 text-white text-xl">
+            Approx. {Data[dataValue][value].posts} blog posts
+          </p>
         </div>
 
         <Range
