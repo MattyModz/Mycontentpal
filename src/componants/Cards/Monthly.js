@@ -4,17 +4,14 @@ export default function Monthly() {
   return (
     <motion.div
       className="lg:flex space-between relative  bg-white rounded-xl"
-      initial={{ opacity: 0, x: -35 }}
-      whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+      initial={{ opacity: 0, x: 35 }}
+      whileInView={{ opacity: 1, x: 0, transition: { duration: 0.7 } }}
       viewport={{ once: true }}
     >
       <div className="lg:border-r-2  py-4">
         <div className="p-8 ">
-          <h1 className="font-bold text-5xl">10K words</h1>
-          <p>10,000 of our finest words per month</p>
-          <p className="text-gray-500">approximately x number of posts</p>
-          <br />
-
+          <h1 className="font-bold text-5xl">Starter</h1>
+          <p>description of what is going into these cards</p>
           <strong className="font-bold text-5xl">$1k</strong>
           <p>Per Month / some description </p>
           <a
@@ -23,17 +20,13 @@ export default function Monthly() {
           >
             Get Started
           </a>
-          <p className="text-gray-300">Sign up at our portal </p>
+          <p>Sign up at our portal </p>
         </div>
       </div>
-      {/* end of card one */}
       <div className="py-4">
-        <div className="p-8 bg-gray-50 sm:border-t sm:rounded-xl">
-          <h1 className="font-bold text-5xl ">20K words</h1>
-          <p>20,000 of our finest words per month</p>
-          <p className="text-gray-500">approximately x number of posts</p>
-          <br />
-
+        <div className="p-8">
+          <h1 className="font-bold text-5xl">Basic</h1>
+          <p>description of what is going into these cards</p>
           <strong className="font-bold text-5xl">$2k</strong>
           <p>Per Month / some description </p>
           <a
@@ -42,10 +35,9 @@ export default function Monthly() {
           >
             Get Started
           </a>
-          <p className="text-gray-300">Sign up at our portal </p>
+          <p>Sign up at our portal </p>
         </div>
       </div>
-      {/* end of card two */}
       <div className=" bg-orange-100 py-4 -mt-10 rounded-t-xl ">
         <div className="p-8 -mt-4 ">
           <a
@@ -67,7 +59,6 @@ export default function Monthly() {
           <p>Sign up at our portal </p>
         </div>
       </div>
-      {/* end of card Three */}
       <div className="py-4 ">
         <div className="p-8">
           <h1 className="font-bold text-5xl">Premium</h1>

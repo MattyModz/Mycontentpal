@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
+import { motion } from "framer-motion";
 export default function Nav() {
   const [Menu, setShowMenu] = useState(false);
   const toggleMenu = () => setShowMenu((prev) => !prev);
@@ -47,8 +47,10 @@ export default function Nav() {
       </div>
 
       <div className="absolute left-0 z-10 items-center justify-between w-full h-full font-medium lg:justify-center lg:flex">
-        <div
-          className={`flex flex-col p-5 mt-4 space-y-5 text-lg  bg-gray-400 rounded-lg shadow-xl lg:text-base lg:space-y-0 lg:shadow-none lg:bg-transparent lg:rounded-none lg:p-0 lg:mt-0 lg:flex-row lg:space-x-10 xl:space-x-16${
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+          className={`flex flex-col p-5 mt-4 space-y-5 text-lg  bg-gray-800 rounded-lg shadow-xl lg:text-base lg:space-y-0 lg:shadow-none lg:bg-transparent lg:rounded-none lg:p-0 lg:mt-0 lg:flex-row lg:space-x-10 xl:space-x-16${
             Menu ? "sm:block hidden" : "block"
           }`}
         >
@@ -87,7 +89,7 @@ export default function Nav() {
           >
             Get Started
           </a>
-        </div>
+        </motion.div>
       </div>
 
       <div className="relative z-20 items-center justify-center hidden mt-4 space-x-5 font-medium lg:flex xl:space-x-6 lg:mt-0">

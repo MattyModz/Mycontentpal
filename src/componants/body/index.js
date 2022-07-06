@@ -4,7 +4,6 @@ import Sectionthree from "./sectionthree";
 export default function Body() {
   return (
     <>
-      <Sectionthree />
       <Sectionone />
     </>
   );

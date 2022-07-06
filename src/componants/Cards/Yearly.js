@@ -11,31 +11,31 @@ export default function Yearly() {
       <div className="lg:border-r-2  py-4">
         <div className="p-8 ">
           <h1 className="font-bold text-5xl">Starter</h1>
-          <p>description of what is going into these cards</p>
-          <strong className="font-bold text-5xl">$1k</strong>
-          <p>Per Month / some description </p>
+          <p>10,000 words per month, approx 5 blog posts</p>
+          <strong className="font-bold  text-5xl">$1k</strong>
+          <p className="text-gray-500">Per Month / some description </p>
           <a
             href="#_"
             class="flex items-center self-start justify-center px-5 py-2 mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-[#169CF9] border border-transparent rounded-full shadow lg:py-4 hover:bg-[#169CF9] focus:outline-none focus:border-[#169CF9] focus:shadow-outline-purple md:text-lg xl:text-xl md:px-5 xl:px-10"
           >
             Get Started
           </a>
-          <p>Sign up at our portal </p>
+          <p className="text-gray-400">Sign up at our portal </p>
         </div>
       </div>
-      <div className="py-4">
-        <div className="p-8">
+      <div className="py-4  rounded-t-xl bg-gray-50  ">
+        <div className="p-8 bg-gray-50">
           <h1 className="font-bold text-5xl">Basic</h1>
-          <p>description of what is going into these cards</p>
-          <strong className="font-bold text-5xl">$2k</strong>
-          <p>Per Month / some description </p>
+          <p>20,000 words per month, approx 10 blog posts</p>
+          <strong className="font-bold  text-5xl">$2k</strong>
+          <p className="text-gray-500">Per Month / some description </p>
           <a
             href="#_"
             class="flex items-center self-start justify-center px-5 py-2 mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-[#169CF9] border border-transparent rounded-full shadow lg:py-4 hover:bg-[#169CF9] focus:outline-none focus:border-[#169CF9] focus:shadow-outline-purple md:text-lg xl:text-xl md:px-5 xl:px-10"
           >
             Get Started
           </a>
-          <p>Sign up at our portal </p>
+          <p className="text-gray-400">Sign up at our portal </p>
         </div>
       </div>
       <div className=" bg-orange-100 py-4 -mt-10 rounded-t-xl ">
@@ -47,31 +47,31 @@ export default function Yearly() {
             Most Popular
           </a>
           <h1 className="font-bold text-5xl ">Pro</h1>
-          <p>description of what is going into these cards</p>
-          <strong className="font-bold text-5xl">$5k</strong>
-          <p>Per Month / some description </p>
+          <p>50,000 words per month, approx 25 blog posts</p>
+          <strong className="font-bold  text-5xl">$5k</strong>
+          <p className="text-gray-500">Per Month / some description </p>
           <a
             href="#_"
             class="flex items-center self-start justify-center px-5 py-2 mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-[#169CF9] border border-transparent rounded-full shadow lg:py-4 hover:bg-[#169CF9] focus:outline-none focus:border-[#169CF9] focus:shadow-outline-purple md:text-lg xl:text-xl md:px-5 xl:px-10"
           >
             Get Started
           </a>
-          <p>Sign up at our portal </p>
+          <p className="text-gray-400">Sign up at our portal </p>
         </div>
       </div>
       <div className="py-4 ">
         <div className="p-8">
           <h1 className="font-bold text-5xl">Premium</h1>
-          <p>description of what is going into these cards</p>
-          <strong className="font-bold text-5xl ">$9k </strong>
-          <p>Per Month / some description </p>
+          <p>100,000 words per month, approx 50 blog posts</p>
+          <strong className="font-bold  text-5xl ">$9k </strong>
+          <p className="text-gray-500">Per Month / some description </p>
           <a
             href="#_"
             class="flex items-center self-start justify-center px-5 py- mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-[#169CF9] border border-transparent rounded-full shadow lg:py-4 hover:bg-[#169CF9] focus:outline-none focus:border-[#169CF9] focus:shadow-outline-purple md:text-lg xl:text-xl md:px-5 xl:px-10"
           >
             Get Started
           </a>
-          <p>Sign up at our portal </p>
+          <p className="text-gray-400">Sign up at our portal </p>
         </div>
       </div>
     </motion.div>

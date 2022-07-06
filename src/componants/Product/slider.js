@@ -16,9 +16,9 @@ const Serviceslider = () => {
       { price: "0.06", words: 25000, posts: 13 },
       { price: "0.06", words: 50000, posts: 25 },
       { price: "0.06", words: 75000, posts: 38 },
-      { price: "0.06", words: 10000, posts: 50 },
-      { price: "0.06", words: 15000, posts: 75 },
-      { price: "0.06", words: 20000, posts: 100 },
+      { price: "0.06", words: 100000, posts: 50 },
+      { price: "0.06", words: 150000, posts: 75 },
+      { price: "0.06", words: 200000, posts: 100 },
     ],
 
     [
@@ -30,9 +30,9 @@ const Serviceslider = () => {
       { price: "0.08", words: 25000, posts: 13 },
       { price: "0.08", words: 50000, posts: 25 },
       { price: "0.06", words: 75000, posts: 38 },
-      { price: "0.06", words: 10000, posts: 50 },
-      { price: "0.05", words: 15000, posts: 75 },
-      { price: "0.05", words: 20000, posts: 100 },
+      { price: "0.06", words: 100000, posts: 50 },
+      { price: "0.05", words: 150000, posts: 75 },
+      { price: "0.05", words: 200000, posts: 100 },
     ],
   ];
 
@@ -104,7 +104,8 @@ const Serviceslider = () => {
         {/* for getting url from array */}
         <div className="flex justify-between">
           <h4 className="fade-in-text font-bold text-3xl lg:text-4xl  bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877] p-5 rounded-xl ">
-            ${Data[dataValue][value].price} per word
+            ${Data[dataValue][value].price}{" "}
+            <span className="lg:text-2xl text-xl">per word</span>
           </h4>
 
           <h4 className="   font-bold pb-5 lg:text-4xl  text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877] p-5 rounded-xl ">
