@@ -65,12 +65,7 @@ export default function Nav() {
           >
             Keyword Research
           </a>
-          <a
-            href="#_"
-            className="text-white transition duration-150 ease-out hover:text-orange-500"
-          >
-            Pricing
-          </a>
+
           <a
             href="/blog"
             className="text-white transition duration-150 ease-out hover:text-orange-500"
