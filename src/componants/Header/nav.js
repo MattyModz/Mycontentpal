@@ -115,7 +115,9 @@ export default function Example() {
                       "group  rounded-md inline-flex items-center  "
                     )}
                   >
-                    <span>More</span>
+                    <span className="hover:bg-clip-text hover:text-transparent  hover:bg-gradient-to-br from-[#FB8753] to-[#FB7877]">
+                      More
+                    </span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-white" : "text-gray-400",
@@ -135,7 +137,7 @@ export default function Example() {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute text-interr z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
-                      <div className="rounded-lg shadow-lg   ring-opacity-5 overflow-hidden">
+                      <div className="rounded-lg shadow-lg    overflow-hidden">
                         <div className="relative grid gap-6 bg-body-dark px-5 py-6 sm:gap-8 sm:p-8">
                           {resources.map((item) => (
                             <a
@@ -223,11 +225,11 @@ export default function Example() {
           focus
           className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
         >
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-body-dark  ">
+          <div className="rounded-lg shadow-lg  bg-body-dark  ">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <img src="./Logo.svg" height={100} width={100} />
+                  <img src="./logo.svg" height={100} width={100} />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className=" rounded-md p-2 inline-flex items-center justify-center text-white ">
