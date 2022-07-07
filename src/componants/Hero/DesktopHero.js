@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 export default function DesktopHero() {
   return (
     <section
@@ -7,20 +7,29 @@ export default function DesktopHero() {
       data-tails-scripts="//unpkg.com/alpinejs"
     >
       <div class="flex mt-10 lg:space-x-8 xl:space-x-10">
-        <div class="flex justify-end hidden w-1/5 h-36 lg:block lg:-mt-20">
+        <motion.div
+          class="flex justify-end hidden w-1/5 h-36 lg:block lg:-mt-20"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, delay: 0.3 },
+          }}
+          viewport={{ once: true }}
+        >
           <div class="w-full h-full p-6 pb-0 bg-white shadow-sm rounded-2xl">
             <div class="grid grid-cols-12 gap-x-2 gap-y-4">
-              <div class="h-3 col-span-2 bg-purple-300 rounded-full"></div>
-              <div class="h-3 col-span-6 bg-purple-400 rounded-full"></div>
-              <div class="h-3 col-span-4 bg-purple-300 rounded-full"></div>
+              <div class="h-3 col-span-2 bg-orange-300 rounded-full"></div>
+              <div class="h-3 col-span-6 bg-orange-400 rounded-full"></div>
+              <div class="h-3 col-span-4 bg-orange-300 rounded-full"></div>
 
               <div class="h-3 col-span-4 bg-gray-300 rounded-full"></div>
               <div class="h-3 col-span-3 bg-gray-300 rounded-full"></div>
               <div class="h-3 col-span-5 bg-gray-200 rounded-full"></div>
 
-              <div class="h-3 col-span-6 bg-purple-400 rounded-full"></div>
-              <div class="h-3 col-span-4 bg-purple-200 rounded-full"></div>
-              <div class="h-3 col-span-2 bg-purple-300 rounded-full"></div>
+              <div class="h-3 col-span-6 bg-orange-400 rounded-full"></div>
+              <div class="h-3 col-span-4 bg-orange-200 rounded-full"></div>
+              <div class="h-3 col-span-2 bg-orange-300 rounded-full"></div>
 
               <div class="h-3 col-span-2 bg-gray-300 rounded-full"></div>
               <div class="h-3 col-span-6 bg-gray-300 rounded-full"></div>
@@ -33,8 +42,17 @@ export default function DesktopHero() {
               class="w-full h-full rounded-full"
             />
           </div>
-        </div>
-        <div class="w-full h-96 lg:w-4/5">
+        </motion.div>
+        <motion.div
+          class="w-full h-96 lg:w-4/5"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1 },
+          }}
+          viewport={{ once: true }}
+        >
           <div class="w-full h-full p-4 pb-0 bg-white rounded-b-none shadow-sm rounded-2xl">
             <div class="flex w-full h-full p-4 space-x-4 rounded-b-none bg-gray-50 rounded-2xl">
               <div class="relative flex flex-col justify-between w-32 h-full p-4 bg-white rounded-2xl">
@@ -84,7 +102,7 @@ export default function DesktopHero() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div class="hidden w-1/5 h-40 lg:block md:-mt-20">
           <div class="flex flex-col items-center justify-center w-full h-full p-5 space-y-4 bg-white shadow-sm rounded-2xl">
             <div class="flex items-center justify-center bg-purple-100 rounded-full w-14 h-14">

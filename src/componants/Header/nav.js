@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
+import { motion } from "framer-motion";
 import {
   BookmarkAltIcon,
   CalendarIcon,
@@ -76,7 +77,16 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <Popover className="relative bg-body-dark font-inter py-4" style={Z_INDEX}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <motion.div
+        className="max-w-7xl mx-auto px-4 sm:px-6"
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 1 },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="flex justify-between items-center   py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
@@ -93,13 +103,13 @@ export default function Example() {
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
             <a
               href="#"
-              className=" text-white hover:bg-clip-text hover:text-transparent  hover:bg-gradient-to-br from-[#FB8753] to-[#FB7877]"
+              className=" text-white hover:bg-clip-text hover:text-transparent font-interr hover:bg-gradient-to-br from-[#FB8753] to-[#FB7877]"
             >
               Home
             </a>
             <a
               href="#"
-              className="text-white hover:bg-clip-text hover:text-transparent  hover:bg-gradient-to-br from-[#FB8753] to-[#FB7877] "
+              className="text-white hover:bg-clip-text hover:text-transparent font-interr hover:bg-gradient-to-br from-[#FB8753] to-[#FB7877] "
             >
               Keyword Research
             </a>
@@ -115,7 +125,7 @@ export default function Example() {
                       "group  rounded-md inline-flex items-center  "
                     )}
                   >
-                    <span className="hover:bg-clip-text hover:text-transparent  hover:bg-gradient-to-br from-[#FB8753] to-[#FB7877]">
+                    <span className="hover:bg-clip-text hover:text-transparent font-interr hover:bg-gradient-to-br from-[#FB8753] to-[#FB7877]">
                       More
                     </span>
                     <ChevronDownIcon
@@ -146,7 +156,7 @@ export default function Example() {
                               className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-700"
                             >
                               <div className="ml-4">
-                                <p className="text-base font-medium text-white">
+                                <p className="text-base font-interr text-white">
                                   {item.name}
                                 </p>
                                 <p className="mt-1 text-sm text-gray-500">
@@ -158,7 +168,7 @@ export default function Example() {
                         </div>
                         <div className="px-5 py-5 bg-gray-700 sm:px-8 sm:py-8">
                           <div>
-                            <h3 className="text-sm tracking-wide font-medium text-white uppercase">
+                            <h3 className="text-sm tracking-wide font-interr text-white uppercase">
                               Recent Posts
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
@@ -169,7 +179,7 @@ export default function Example() {
                                 >
                                   <a
                                     href={post.href}
-                                    className="font-medium text-white hover:text-gray-700"
+                                    className="font-interr text-white hover:text-gray-700"
                                   >
                                     {post.name}
                                   </a>
@@ -180,7 +190,7 @@ export default function Example() {
                           <div className="mt-5 text-sm">
                             <a
                               href="/blog"
-                              className="font-medium text-orange-500 hover:text-orange-500"
+                              className="font-interr text-orange-500 hover:text-orange-500"
                             >
                               {" "}
                               View all posts{" "}
@@ -198,19 +208,19 @@ export default function Example() {
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
               href="#"
-              className="whitespace-nowrap text-base font-medium text-white hover:text-white"
+              className="whitespace-nowrap text-base font-interr text-white hover:text-white"
             >
               Sign in
             </a>
             <a
               href="#"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-white btnPrimary"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-inter text-white btnPrimary"
             >
               Get started
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <Transition
         as={Fragment}
@@ -246,7 +256,7 @@ export default function Example() {
                       href={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-700"
                     >
-                      <span className="ml-3 text-base font-medium text-white">
+                      <span className="ml-3 text-base font-interr text-white">
                         {item.name}
                       </span>
                     </a>
@@ -258,11 +268,11 @@ export default function Example() {
               <div>
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gradient-to-br from-[#FB8753] to-[#FB7877]"
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-inter text-white bg-gradient-to-br from-[#FB8753] to-[#FB7877]"
                 >
                   Get started
                 </a>
-                <p className="mt-6 text-center text-base font-medium text-white">
+                <p className="mt-6 text-center text-base font-inter text-white">
                   Existing customer?{" "}
                   <a
                     href="#"

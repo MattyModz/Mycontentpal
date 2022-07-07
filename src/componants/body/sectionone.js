@@ -4,17 +4,6 @@ export default function Sectionone() {
     <>
       <section class="py-20 bg-white font-inter">
         <div class="flex flex-col px-8 container">
-          <div class="relative">
-            <h2 class="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl">
-              {" "}
-              Content Kept simple
-            </h2>
-            <p class="w-full py-8 mx-auto -mt-2 text-lg text-center text-gray-700 intro sm:max-w-3xl">
-              Our mission is to understand your business like it's our own.
-              Translating your brand and product or offering into actionable and
-              effective, high quality content that gets results.
-            </p>
-          </div>
           <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8  sm:order-last">
               <motion.img
@@ -22,7 +11,7 @@ export default function Sectionone() {
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
                 viewport={{ once: true }}
                 className=" object-fill w-full "
-                src="test1.png"
+                src="Terminal.png"
               />
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
@@ -49,7 +38,7 @@ export default function Sectionone() {
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
                 viewport={{ once: true }}
                 className=" object-fill w-full  "
-                src="screen2.png"
+                src="Terminal.png"
               />
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0  sm:pl-16">
@@ -103,7 +92,7 @@ export default function Sectionone() {
                 src="test1.png"
               />
             </div>
-            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
+            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16 sm:order-last">
               <p class="mb-2 text-sm font-semibold leading-none text-left text-orange-400 uppercase">
                 Edit.
               </p>
@@ -128,7 +117,7 @@ export default function Sectionone() {
                 src="screen2.png"
               />
             </div>
-            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0  sm:pl-16">
+            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0  sm:pl-16 ">
               <p class="mb-2 text-sm font-semibold leading-none text-left text-orange-400 uppercase">
                 Edit AGAIN.
               </p>
