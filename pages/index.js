@@ -17,10 +17,6 @@ export default function Home({ posts }) {
 
       <Product />
 
-      <div className="sm:block hidden">
-        {" "}
-        <Test />
-      </div>
       <Tweets />
       <Cards />
 

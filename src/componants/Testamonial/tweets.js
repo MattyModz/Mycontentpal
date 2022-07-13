@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Tweets() {
   return (
     <>
-      <section class="w-full   sm:py-16 py-12 md:py-20 relative font-interr sm:hidden">
+      <section class="w-full   sm:py-16 py-12 md:py-20 relative font-interr ">
         <div class="max-w-7xl mx-auto px-10">
           <div class="flex flex-col mb-7 sm:mb-20 items-start md:items-center justify-center">
             <p class="sm:tracking-widest sm:text-base text-4xl  text-inter font-inter text-black">

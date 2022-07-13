@@ -4,7 +4,9 @@ import Sectionthree from "./sectionthree";
 export default function Body() {
   return (
     <>
-      <Sectionone />
+      <section className="bg-body-dark">
+        <Sectionone />
+      </section>
     </>
   );
 }

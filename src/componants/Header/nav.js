@@ -77,7 +77,7 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <Popover
-      className="relative bg-body-dark font-inter  sticky top-0"
+      className="relative bg-body-dark font-inter  sticky top-0 "
       style={Z_INDEX}
     >
       <motion.div

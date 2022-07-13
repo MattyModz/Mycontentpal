@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useState, useEffect, useRef } from "react";
 import Surferdial from "./Assets/Surferdial";
 import Textpanel from "./Assets/Textpanel";
+import Image from "next/image";
 export default function Sectionone() {
   const { ref: myRef1, inView: myElementIsVisible1 } = useInView({});
   const { ref: myRef2, inView: myElementIsVisible2 } = useInView({});
@@ -23,9 +24,9 @@ export default function Sectionone() {
     <>
       {/* card container */}
 
-      <div className="flex flex-col font-inter container py-20  px-8  ">
+      <div className="flex flex-col font-inter container py-20 px-8 text-white ">
         {/* end card container */}
-        <div className="  sticky top-40  w-full container h-1/2 sm:block hidden ">
+        <div className="  sticky top-40  w-full container  sm:block hidden  h-1/2  ">
           <div
             layout
             className={`flex justify-start   w-full   ${
@@ -38,7 +39,7 @@ export default function Sectionone() {
             <motion.img
               layout
               transition={spring}
-              className=" object-fill w-1/2 sm:block hidden "
+              className=" object-fill w-1/2 sm:block hidden top-0 left-0 shadow-lg bg-blend-multiply rounded-2xl"
               src="BackPanel.svg"
             />
           </div>
@@ -61,7 +62,7 @@ export default function Sectionone() {
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
               Understand your content creation aim.
             </h3>
-            <p className="mt-5 text-lg text-gray-700 text md:text-left font-interr">
+            <p className="mt-5 text-lg text-white text md:text-left font-interr">
               Our prepping team will follow your brief meticulously. They’ll
               follow our Prepping Guide to outline your article, so it looks
               attractive and simple for your readers.{" "}
@@ -90,16 +91,16 @@ export default function Sectionone() {
             <p className="mb-2 text-sm font-semibold leading-none text-left text-orange-400 uppercase">
               Research.
             </p>
+            <span ref={myRef1}></span>
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
               A Great grasp of your niche
             </h3>
-            <p className="mt-5 text-lg text-gray-700 text md:text-left  font-interr">
+            <p className="mt-5 text-lg text-white text md:text-left  font-interr">
               Don’t worry if you have a tedious subject. Our writers won’t begin
               writing until they’ve researched your niche and become an expert
               themselves. This includes reading articles, watching YouTube
               videos, reading statements on social media and scanning through
               questions and answers on sites such as Quora.
-              <span ref={myRef1}></span>
             </p>
           </motion.div>
         </div>
@@ -122,7 +123,7 @@ export default function Sectionone() {
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
               Pen put to paper.
             </h3>
-            <p className="mt-5 text-lg text-gray-700 text md:text-left font-interr">
+            <p className="mt-5 text-lg text-white text md:text-left font-interr">
               Then our super squad of writers put their powers to work. You will
               always have an introduction, conclusion and FAQs unless
               specifically asked not to have them. Our writers are professionals
@@ -151,15 +152,15 @@ export default function Sectionone() {
             <p className=" text-sm font-semibold leading-none text-left text-orange-400 uppercase">
               Edit.
             </p>
+            <span ref={myRef2}> </span>
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
               Ensuring our writings hit the mark.
             </h3>
-            <p className="mt-5 text-lg text-gray-700 text md:text-left  font-interr">
+            <p className="mt-5 text-lg text-white text md:text-left  font-interr">
               The writers will then edit their work, double-checking that the
               spelling is in the correct country, the Surfer score is
               sky-scraping, the relevant keywords are used, and the general
               spelling and grammar are high quality.
-              <span ref={myRef2}> </span>
             </p>
           </motion.div>
         </div>
@@ -167,3 +168,10 @@ export default function Sectionone() {
     </>
   );
 }
+
+//  <motion.img
+//    layout
+//    transition={spring}
+//    className=" w-1/4  "
+//    src="Pink Doc.svg"
+//  />;
