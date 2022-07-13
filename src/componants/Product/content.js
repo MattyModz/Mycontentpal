@@ -3,7 +3,7 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 export default function Content() {
   return (
     <>
-      <div className="bg-body-dark p-8">
+      <div className="bg-body-dark p-8 mb-8">
         <div className="border-2 rounded-xl p-4 -mt-8  bg-white text-black">
           <Container>
             Money Content

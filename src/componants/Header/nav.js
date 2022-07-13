@@ -37,7 +37,7 @@ const solutions = [
   {
     name: "Blog",
     description: "Your customers' data will be safe and secure.",
-    href: "blog",
+    href: "/blog",
     icon: BookmarkAltIcon,
   },
 ];
@@ -76,9 +76,12 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Popover className="relative bg-body-dark font-inter py-4" style={Z_INDEX}>
+    <Popover
+      className="relative bg-body-dark font-inter  sticky top-0"
+      style={Z_INDEX}
+    >
       <motion.div
-        className="max-w-7xl mx-auto px-4 sm:px-6"
+        className="max-w-6xl mx-auto px-4 sm:px-6"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{
           opacity: 1,
@@ -87,10 +90,9 @@ export default function Example() {
         }}
         viewport={{ once: true }}
       >
-        <div className="flex justify-between items-center   py-6 md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center   py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
-              <span className="sr-only">Workflow</span>
               <img src="./logo.svg" height={100} width={100} />
             </a>
           </div>

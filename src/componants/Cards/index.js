@@ -18,14 +18,14 @@ export default function Cards() {
       className="bg-body-dark   
       "
     >
-      <div className="py-8">
+      {/* <div className="py-8 container">
         <h3 className="text-2xl text-white font-inter text-center bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877]">
           Can we scratch your content itch?
         </h3>
         <h3 className="text-6xl text-white font-inter text-center py-2 ">
           Content subscription service
         </h3>
-      </div>
+      </div> */}
       <div className="w-full container px-8 pb-6 py-8">
         <div>
           <div className="flex  justify-start py-4">
