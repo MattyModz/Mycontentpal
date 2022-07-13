@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 export default function Tweets() {
   return (
     <>
-      <section class="w-full   sm:py-16 py-12 md:py-20 relative font-interr ">
+      <section class="w-full   sm:py-16 py-12 md:py-20 relative font-interr bg-body-dark ">
         <div class="max-w-7xl mx-auto px-10">
           <div class="flex flex-col mb-7 sm:mb-20 items-start md:items-center justify-center">
-            <p class="sm:tracking-widest sm:text-base text-4xl  text-inter font-inter text-black">
+            <p class="sm:tracking-widest sm:text-base text-4xl  text-inter font-inter text-white">
               What people are saying about us
             </p>
-            <h2 class="text-black mt-2 text-2xl sm:text-4xl tracking-tight font-bold sm:font-extrabold font-interr md:text-5xl dark:text-white">
+            <h2 class="text-white mt-2 text-2xl sm:text-4xl tracking-tight font-bold sm:font-extrabold font-interr md:text-5xl dark:text-white">
               Don't just take our word for it.
             </h2>
-            <div class="mt-1 md:mt-4 items-center flex text-blue-600">
+            <div class="mt-1 md:mt-4 items-center flex text-orange-500">
               <svg
                 class="w-8 h-8 sm:block hidden mr-1.5 mt-0.5"
                 fill="currentColor"
