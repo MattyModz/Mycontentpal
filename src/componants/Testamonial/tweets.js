@@ -35,7 +35,7 @@ export default function Tweets() {
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
                 viewport={{ once: true }}
               >
-                <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                <div class="flex items-center border-b relative border-orange-50 border-solid pb-5 mb-5">
                   <img
                     src="./JamesGregory.png"
                     class="rounded-full mr-3 w-12 h-12"
@@ -44,12 +44,12 @@ export default function Tweets() {
                     <p class="font-semibold text-gray-600 leading-none my-1">
                       James Gregory
                     </p>
-                    <p class="font-medium text-gray-400 text-sm">
+                    <p class="font-medium text-black text-sm">
                       Business growth at Searcharoo
                     </p>
                   </div>
                 </div>
-                <blockquote class="text-gray-400 z-10 leading-7 relative pb-3">
+                <blockquote class="text-black z-10 leading-7 relative pb-3">
                   Level up your content game with content that sells I needed
                   terrific content that aligns with my client's brand narrative
                   and tone while simultaneously positioning them in a certain
@@ -60,7 +60,7 @@ export default function Tweets() {
                   money site content for the foreseeable future.
                 </blockquote>
                 <svg
-                  class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                  class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-orange-600"
                   fill="currentColor"
                   viewBox="0 0 32 32"
                   aria-hidden="true"
@@ -74,7 +74,7 @@ export default function Tweets() {
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
                 viewport={{ once: true }}
               >
-                <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                <div class="flex items-center border-b relative border-orange-50 border-solid pb-5 mb-5">
                   <img
                     src="./JamesBrockbank.png"
                     class="rounded-full mr-3 w-12 h-12"
@@ -83,12 +83,12 @@ export default function Tweets() {
                     <p class="font-semibold text-gray-600 leading-none my-1">
                       James Brockbank
                     </p>
-                    <p class="font-medium text-gray-400 text-sm">
+                    <p class="font-medium text-black text-sm">
                       CEO DigitalLoft
                     </p>
                   </div>
                 </div>
-                <blockquote class="text-gray-400 z-10 leading-7 relative pb-3">
+                <blockquote class="text-black z-10 leading-7 relative pb-3">
                   "One of the best content agencies we've used...
                   <br />
                   <br />
@@ -103,7 +103,7 @@ export default function Tweets() {
                   strong, always keeping us updated.
                 </blockquote>
                 <svg
-                  class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                  class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-orange-600"
                   fill="currentColor"
                   viewBox="0 0 32 32"
                   aria-hidden="true"
@@ -117,7 +117,7 @@ export default function Tweets() {
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
                 viewport={{ once: true }}
               >
-                <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                <div class="flex items-center border-b relative border-orange-50 border-solid pb-5 mb-5">
                   <img
                     src="/AlexChapman.jpg"
                     class="rounded-full mr-3 w-12 h-12"
@@ -126,12 +126,12 @@ export default function Tweets() {
                     <p class="font-semibold text-gray-600 leading-none my-1">
                       Alex Chapman
                     </p>
-                    <p class="font-medium text-sm text-gray-400">
-                      Founder and SEO Director - SEO Partners
+                    <p class="font-medium text-sm text-black">
+                      SEO Director - SEO Partners
                     </p>
                   </div>
                 </div>
-                <blockquote class="text-gray-400 z-10 leading-7 relative pb-3">
+                <blockquote class="text-black z-10 leading-7 relative pb-3">
                   "High Quality and great value.
                   <br /> I’ve been using my content pal for about a year now and
                   for good reason, they deliver. I’ve tried a number of other
@@ -140,7 +140,7 @@ export default function Tweets() {
                   good price, give MCP a go."
                 </blockquote>
                 <svg
-                  class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                  class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-orange-600"
                   fill="currentColor"
                   viewBox="0 0 32 32"
                   aria-hidden="true"
