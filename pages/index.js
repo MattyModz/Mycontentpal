@@ -14,12 +14,14 @@ export default function Home({ posts }) {
       <Hero />
 
       <Body />
-      <Tweets />
+
       <Product />
+
+      <div className="sm:block hidden">
+        {" "}
+        <Test />
+      </div>
       <Tweets />
-
-      <Test />
-
       <Cards />
 
       <Blogcard posts={posts} />
