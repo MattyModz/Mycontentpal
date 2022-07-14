@@ -39,8 +39,14 @@ export default function Sectionone() {
             <motion.img
               layout
               transition={spring}
-              className=" object-fill w-1/2 sm:block hidden top-0 left-0 shadow-lg bg-blend-multiply rounded-2xl"
+              className="object-fill w-1/2 sm:block hidden top-0 left-0 shadow-lg bg-blend-multiply rounded-2xl"
               src="BackPanel.svg"
+            />
+            <motion.img
+              layout
+              transition={spring}
+              className=" w-1/3 absolute flex   "
+              src="Asset 116.svg"
             />
           </div>
         </div>
@@ -48,7 +54,7 @@ export default function Sectionone() {
         <div className="flex flex-col   sm:flex-row  h-screen lg:absolute container lg:mb-16 ">
           <div className="flex items-center mb-8  lg:w-3/4 w-full  shadow-full "></div>
           <motion.div
-            className="flex flex-col lg:py-24 mt-5 mb-16 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16 h-screen "
+            className="flex flex-col lg:py-24 mt-5 lg:mb-16 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16 h-screen "
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -74,13 +80,16 @@ export default function Sectionone() {
               </span>
             </p>
           </motion.div>
+          <div className="sm:hidden block">
+            <Image src="/Asset 116.svg" width={500} height={500} />
+          </div>
         </div>
         {/* SECTION TWO*/}
 
-        <div className="flex flex-col mb-8  mt-72 sm:flex-row  h-screen ">
-          <div className="flex items-center mb-8 sm:order-last lg:w-3/4 w-full"></div>
+        <div className="flex flex-col lg:mt-72 sm:flex-row  h-screen ">
+          <div className="flex items-center  sm:order-last lg:w-3/4 w-full"></div>
           <motion.div
-            className="flex flex-col s mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16 h-screen py-48"
+            className="flex flex-col  md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16 h-screen lg:py-48"
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -103,13 +112,26 @@ export default function Sectionone() {
               questions and answers on sites such as Quora.
             </p>
           </motion.div>
+          <div className="sm:hidden block">
+            <motion.img
+              src="/Asset 117.svg"
+              width={500}
+              height={500}
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+
+                transition: { duration: 2 },
+              }}
+            />
+          </div>
         </div>
         {/* SECTION THREE*/}
 
         <div className="flex flex-col mb-8 animated fadeIn sm:flex-row  h-screen">
           <div className="flex items-center mb-8  lg:w-3/4 w-full  "></div>
           <motion.div
-            className="flex flex-col py-24 mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16"
+            className="flex flex-col lg:py-24 mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16"
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -135,13 +157,26 @@ export default function Sectionone() {
               Bread.
             </p>
           </motion.div>
+          <div className="sm:hidden block">
+            <motion.img
+              src="/Asset 119.svg"
+              width={500}
+              height={500}
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+
+                transition: { duration: 2 },
+              }}
+            />
+          </div>
         </div>
         {/* SECTION FOUR*/}
 
         <div className="flex flex-col  animated fadeIn sm:flex-row ">
           <div className="flex items-center  lg:w-3/4 w-full sm:order-last "></div>
           <motion.div
-            className="flex flex-col py-24 mt-5   md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16"
+            className="flex flex-col lg::py-24 mt-5   md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16"
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -163,15 +198,21 @@ export default function Sectionone() {
               spelling and grammar are high quality.
             </p>
           </motion.div>
+          <div className="sm:hidden block">
+            <motion.img
+              src="/SocialsAsset 118.svg"
+              width={500}
+              height={500}
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+
+                transition: { duration: 2 },
+              }}
+            />
+          </div>
         </div>
       </div>
     </>
   );
 }
-
-//  <motion.img
-//    layout
-//    transition={spring}
-//    className=" w-1/4  "
-//    src="Pink Doc.svg"
-//  />;

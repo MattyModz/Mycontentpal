@@ -4,7 +4,7 @@ export default function Yearly() {
   return (
     <motion.div
       className="lg:flex space-between relative  bg-white rounded-xl"
-      initial={{ opacity: 0, x: 35 }}
+      initial={{ opacity: 0, x: 10 }}
       whileInView={{ opacity: 1, x: 0, transition: { duration: 0.7 } }}
       viewport={{ once: true }}
     >

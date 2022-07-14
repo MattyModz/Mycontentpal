@@ -70,9 +70,6 @@ export default function ProdHeader() {
           </RoughNotation>
         </p>
       </div>
-      <div className="text-center lg:text-3xl px-8 font-interr fade-in-text text-gray-100 py-2">
-        {Data[dataValue][0].description}
-      </div>
     </section>
   );
 }

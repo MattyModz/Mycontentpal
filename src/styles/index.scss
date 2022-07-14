@@ -187,3 +187,12 @@ iframe[src*="vimeo"] {
 .show {
   color: red;
 }
+
+.dot {
+  background-size: 4px 4px;
+  background-color: #1f2937;
+  background-image: radial-gradient(transparent 1px, #1f2937);
+  background-repeat: initial;
+  backdrop-filter: blur(3px);
+  z-index: 999;
+}

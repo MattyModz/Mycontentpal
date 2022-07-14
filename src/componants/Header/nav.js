@@ -76,13 +76,10 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Popover
-      className="relative bg-body-dark font-inter  sticky top-0 "
-      style={Z_INDEX}
-    >
+    <Popover className="  dot font-inter  sticky top-0  " style={Z_INDEX}>
       <motion.div
         className="max-w-6xl mx-auto px-4 sm:px-6"
-        initial={{ opacity: 0, y: -40 }}
+        initial={{ opacity: 0, y: -10 }}
         whileInView={{
           opacity: 1,
           y: 0,
@@ -207,6 +204,7 @@ export default function Example() {
               )}
             </Popover>
           </Popover.Group>
+
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
               href="#"
