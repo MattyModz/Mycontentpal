@@ -3,7 +3,7 @@ import Tweets from "../src/componants/Testamonial/tweets";
 import Product from "../src/componants/Product";
 import Body from "../src/componants/body";
 import Cards from "../src/componants/Cards";
-import CTA from "../src/componants/Layout/CTA";
+
 import Blogcard from "../src/componants/Blog";
 import { sanityClient } from "../sanity";
 // import TLBHome from "../src/componants/TLBhome";
@@ -14,7 +14,7 @@ export default function Home({ posts }) {
       <Hero />
 
       <Body />
-      <CTA />
+
       <Product />
 
       <Tweets />
