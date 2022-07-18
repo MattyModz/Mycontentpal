@@ -70,6 +70,7 @@ export default function ProdHeader() {
           </RoughNotation>
         </p>
       </div>
+      {Data[dataValue][0].description}
     </section>
   );
 }

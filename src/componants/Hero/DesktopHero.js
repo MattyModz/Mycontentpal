@@ -108,6 +108,7 @@ export default function DesktopHero() {
                       </div>
                       <div className="flex justify-end"></div>
                       <div className="mx-auto px-8 py-2">
+                        <span className="text-2xl font-inter italic ">"</span>
                         Level up your content game with content that sells I
                         needed terrific content that aligns with my client's
                         brand narrative and tone while simultaneously

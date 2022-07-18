@@ -7,7 +7,7 @@ const ContextProvider = ({ children }) => {
   const [isOn, setIsOn] = useState(false);
 
   return (
-    <Context.Provider value={{ dataValue, setDataValue, isOn }}>
+    <Context.Provider value={{ dataValue, setDataValue, isOn, setIsOn }}>
       {children}
     </Context.Provider>
   );
