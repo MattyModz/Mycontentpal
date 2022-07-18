@@ -13,7 +13,7 @@ const Tagline = [
   "One of the best content agencies we've used...",
   "High quality, great value",
 ];
-const Image = ["./JamesGregory.png", "JamesBrockbank.png", "AlexChapman.jpg"];
+const Image = ["./jamesGregory.png", "JamesBrockbank.png", "AlexChapman.jpg"];
 const Body = [
   "I needed terrific content that aligns with my client's brand narrative and tone while simultaneously positioning them in a certain way in the marketplace. No other content provider understood that. But Craig did. !",
   "The quality of the content is great, it need minimal edits from our in-house team and the account management is strong, always keeping us updated. We'll be back for more!",
