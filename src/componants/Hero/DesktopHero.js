@@ -79,7 +79,7 @@ export default function DesktopHero() {
                 </div>
               </div>
               <div className="w-full h-full p-5 bg-white rounded-2xl">
-                <div className="flex flex-col w-full h-full space-x-1">
+                <div className="flex flex-col w-full h-full   space-x-1">
                   <div className="flex w-full mt-2 space-x-2">
                     <div className="w-16 h-16 bg-gray-50 rounded-full">
                       <img
@@ -87,19 +87,20 @@ export default function DesktopHero() {
                         class="rounded-full  w-16 h-16"
                       />
                     </div>
-                    <div className="flex flex-col space-y-3">
-                      <div className="w-32 h-3 mt-2 rounded-full bg-gray-50 font-bold font-inter">
+                    <div className=" ">
+                      <div className="  rounded-full bg-gray-50 font-bold font-inter">
                         James Gregory
                       </div>
-                      <div className="font-interr">
+                      <div className="font-interr xsm:block hidden">
                         {" "}
                         Business growth at Searcharoo
                       </div>
+                      <img src="stars-5-1.svg" class=" mr-3 w-24 h-6 mt-1 " />
                     </div>
                   </div>
                   <div className="flex flex-grow w-full h-full mt-3 space-x-4 font-inter">
                     <div className="w-full h-full pl-4 bg-gray-50 rounded-xl ">
-                      <div className="flex mt-1">
+                      <div className="flex mt-1 sm:block hidden">
                         <img
                           src="trustpilot-1 (1).svg"
                           class="rounded-full mr-3 w-24 h-6"
@@ -108,7 +109,10 @@ export default function DesktopHero() {
                       </div>
                       <div className="flex justify-end"></div>
                       <div className="mx-auto px-8 py-2">
-                        <span className="text-2xl font-inter italic ">"</span>
+                        <div className="font-interr font-bold">
+                          {" "}
+                          Business growth at Searcharoo
+                        </div>
                         Level up your content game with content that sells I
                         needed terrific content that aligns with my client's
                         brand narrative and tone while simultaneously
