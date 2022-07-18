@@ -146,7 +146,7 @@ export default function Sectionone() {
             <motion.img
               layout
               transition={spring}
-              src="Asset 11.svg"
+              src="Asset 117.svg"
               className="lg:hidden md:hidden py-16"
             />
           </motion.div>
