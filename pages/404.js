@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Four0Four() {
   return (
     <section className="bg-body-dark grid grid-cols-1 content-center  h-screen">
@@ -9,11 +10,11 @@ export default function Four0Four() {
           Whoops no content here!
         </div>
         <div className="flex justify-center py-4">
-          <a href="/">
+          <Link href={"/"} passHref>
             <button className="font-interr btnPrimary rounded-xl text-2xl text-white py-2 p-2">
               Return Home
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
