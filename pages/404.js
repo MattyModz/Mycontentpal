@@ -11,7 +11,7 @@ export default function Four0Four() {
         </div>
         <div className="flex justify-center py-4">
           <Link href={"/"} passHref>
-            <button className="font-interr btnPrimary rounded-xl text-2xl text-white py-2 p-2">
+            <button className="font-interr btnPrimary rounded-xl text-l text-white py-2 p-2">
               Return Home
             </button>
           </Link>

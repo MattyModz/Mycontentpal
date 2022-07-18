@@ -53,28 +53,11 @@ export default function DesktopHero() {
           <div className="w-full h-full p-4 pb-0 bg-white rounded-b-none shadow-sm rounded-2xl">
             <div className="flex w-full h-full p-4 lg:space-x-4 rounded-b-none bg-gray-50 rounded-2xl">
               <div className="relative sm:block hidden flex flex-col justify-between w-32 h-full p-4 bg-white rounded-2xl">
-                <div className="relative flex justify-center w-full pt-3">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-orange-50">
-                    <svg
-                      className="w-5 h-5 text-orange-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
+                <div className="relative flex justify-center w-full pt-3"></div>
                 <div className="relative space-y-4">
-                  <div className="h-2 rounded-full bg-purple-50"></div>
-                  <div className="h-2 rounded-full bg-purple-50"></div>
-                  <div className="h-2 rounded-full bg-purple-50"></div>
+                  <div className="h-2 rounded-full bg-gray-50"></div>
+                  <div className="h-2 rounded-full bg-gray-50"></div>
+                  <div className="h-2 rounded-full bg-gray-50"></div>
                 </div>
                 <div className="relative flex items-center space-x-2">
                   <div className="flex-shrink-0 w-2 h-2 bg-gray-200 rounded-full"></div>
@@ -189,9 +172,9 @@ export default function DesktopHero() {
 //               </div>
 //             </div>
 //             <div className="relative space-y-4">
-//               <div className="h-2 rounded-full bg-purple-50"></div>
-//               <div className="h-2 rounded-full bg-purple-50"></div>
-//               <div className="h-2 rounded-full bg-purple-50"></div>
+//               <div className="h-2 rounded-full bg-gray-50"></div>
+//               <div className="h-2 rounded-full bg-gray-50"></div>
+//               <div className="h-2 rounded-full bg-gray-50"></div>
 //             </div>
 //             <div className="relative flex items-center space-x-2">
 //               <div className="flex-shrink-0 w-2 h-2 bg-gray-200 rounded-full"></div>

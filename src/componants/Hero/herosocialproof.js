@@ -15,9 +15,9 @@ const Tagline = [
 ];
 const Image = ["./jamesGregory.png", "JamesBrockbank.png", "AlexChapman.jpg"];
 const Body = [
-  "I needed terrific content that aligns with my client's brand narrative and tone while simultaneously positioning them in a certain way in the marketplace. No other content provider understood that. But Craig did. !",
-  "The quality of the content is great, it need minimal edits from our in-house team and the account management is strong, always keeping us updated. We'll be back for more!",
-  "I’ve been using my content pal for about a year now and for good reason, they deliver. I’ve tried a number of other content companies in the past, but they’ve always fallen short. If you’re after quality content, at a good price, give MCP a go.",
+  "'I needed terrific content that aligns with my client's brand narrative and tone wand marketplace positioning. No other content provider understood that. But Craig did.",
+  "'The quality of the content is great, it need minimal edits from our in-house team and the account management is strong, always keeping us updated. ",
+  "'I’ve been using my content pal for about a year now and for good reason, they deliver. I’ve tried a number of other content companies in the past, but they’ve always fallen short. If you’re after quality content, at a good price, give MCP a go.",
 ];
 const variants = {
   visible: {
@@ -53,7 +53,7 @@ export class Example extends React.Component {
     const { current } = this.state;
 
     return (
-      <div>
+      <div className="font-inter">
         <AnimatePresence initial={false} exitBeforeEnter>
           <motion.div
             className="animated-text"
@@ -99,7 +99,7 @@ export class Example extends React.Component {
                         {Tagline[current]} <br />
                         <br />
                       </div>
-                      {Body[current]}
+                      <div className="text-xl font-inter">{Body[current]}</div>
                     </div>
                   </div>
                 </div>
