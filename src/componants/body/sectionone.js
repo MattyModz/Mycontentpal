@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Sectionone() {
   const { ref: myRef1, inView: myElementIsVisible1 } = useInView({});
   const { ref: myRef2, inView: myElementIsVisible2 } = useInView({});
-  // const { ref: myRef3, inView: myElementIsVisible3 } = useInView({});
+  const { ref: myRef3, inView: myElementIsVisible3 } = useInView({});
   // const { ref: myRef4, inView: myElementIsVisible4 } = useInView({});
 
   const spring = {
@@ -26,33 +26,61 @@ export default function Sectionone() {
 
       <div className="flex flex-col font-inter container py-20 px-8 text-white ">
         {/* end card container */}
-        <div className="  sticky top-40  w-full container  sm:block hidden  h-screen  ">
-          <div
-            layout
-            className={`flex justify-start   w-full   ${
-              myElementIsVisible1 || myElementIsVisible2
-                ? " flex justify-end w-full "
-                : ""
-            }`}
-          >
-            {" "}
-            <motion.img
+        <div className=" sm:block hidden w-full container sticky top-40 h-screen">
+          <div className="    sm:block hidden  h-full relative ">
+            <div
               layout
-              transition={spring}
-              className="object-fill w-1/2 sm:block hidden top-0 left-0 shadow-lg bg-blend-multiply rounded-2xl"
-              src="BackPanel.svg"
-            />
-            <motion.img
-              layout
-              transition={spring}
-              className=" w-1/3 absolute flex   "
-              src="Asset 116.svg"
-            />
+              className={`flex justify-start border-4  absolute  w-full   ${
+                myElementIsVisible2 ? " flex justify-end w-full " : ""
+              }`}
+            >
+              {" "}
+              <motion.img
+                layout
+                transition={spring}
+                className="object-fill  w-1/2 sm:block hidden top-0 left-0 shadow-lg bg-blend-multiply rounded-2xl"
+                src="BackPanel.svg"
+              />
+            </div>
+
+            <div className="absolute border-4  w-full border-red-400  h-1/2  ">
+              <div className="grid-cols-2 m:grid-cols-1 grid border-4 border-blue-400 h-full">
+                <div className=" grid place-items-end h-full overflow-visible translate-x-12">
+                  <motion.img
+                    layout
+                    transition={spring}
+                    className={`object-fill  w-2/3  shadow-lg bg-blend-multiply rounded-2xl    overflow-visible ${
+                      myElementIsVisible1
+                        ? "opacity-100"
+                        : myElementIsVisible2
+                        ? "opacity-0"
+                        : ""
+                    }`}
+                    src="Asset 119.svg"
+                  />
+                </div>
+
+                <div className=" w-full flex items-end  h-full overflow-visible -translate-x-16">
+                  <motion.img
+                    layout
+                    transition={spring}
+                    className={`object-fill opacity-0 w-2/3  shadow-lg bg-blend-multiply rounded-2xl    overflow-visible ${
+                      myElementIsVisible2
+                        ? "opacity-100"
+                        : myElementIsVisible3
+                        ? "opacity-0"
+                        : ""
+                    }`}
+                    src="Asset 117.svg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-col   sm:flex-row  h-screen lg:absolute container lg:mb-16 ">
-          <div className="flex items-center mb-8  lg:w-3/4 w-full  shadow-full "></div>
+        <div className="flex flex-col   sm:flex-row  lg:h-screen lg:absolute container lg:mb-16 ">
+          <div className="flex items-center lg:mb-8  lg:w-3/4 w-full  shadow-full "></div>
           <motion.div
             className="flex flex-col lg:py-24 mt-5 lg:mb-16 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16 h-screen "
             initial={{ opacity: 0 }}
@@ -62,9 +90,10 @@ export default function Sectionone() {
               transition: { duration: 1 },
             }}
           >
-            <p className="mb-2 text-sm font-semibold leading-none text-left text-orange-400 uppercase">
+            <p className="lg:mb-2 text-sm font-semibold leading-none text-left text-orange-400 uppercase">
               Prep.
             </p>
+            <span ref={myRef1} />
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
               Understand your content creation aim.
             </h3>
@@ -79,14 +108,20 @@ export default function Sectionone() {
                 headline compared to competitor examples.
               </span>
             </p>
+            <motion.img
+              layout
+              transition={spring}
+              src="Asset 116.svg"
+              className="lg:hidden md:hidden py-16"
+            />
           </motion.div>
         </div>
         {/* SECTION TWO*/}
 
-        <div className="flex flex-col mb-8  lg:mt-72 sm:flex-row  h-screen ">
-          <div className="flex items-center mb-8 sm:order-last lg:w-3/4 w-full"></div>
+        <div className="flex flex-col lg:mb-8  lg:mt-72 sm:flex-row  h-screen ">
+          <div className="flex items-center lg:mb-8 sm:order-last lg:w-3/4 w-full"></div>
           <motion.div
-            className="flex flex-col s mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16 h-screen py-48"
+            className="flex flex-col lg:mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16 h-screen lg:py-48"
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -94,10 +129,10 @@ export default function Sectionone() {
               transition: { duration: 2 },
             }}
           >
-            <p className=" text-sm mb-10 font-semibold leading-none text-left text-orange-400 uppercase">
+            <p className=" text-sm lg:mb-10 font-semibold leading-none text-left text-orange-400 uppercase">
               Research.
             </p>
-            <span ref={myRef1}></span>
+            <span ref={myRef2}></span>
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
               A Great grasp of your niche
             </h3>
@@ -108,12 +143,18 @@ export default function Sectionone() {
               videos, reading statements on social media and scanning through
               questions and answers on sites such as Quora.
             </p>
+            <motion.img
+              layout
+              transition={spring}
+              src="Asset 117.svg"
+              className="lg:hidden md:hidden py-16"
+            />
           </motion.div>
         </div>
         {/* SECTION THREE*/}
 
-        <div className="flex flex-col mb-8 animated fadeIn sm:flex-row  h-screen">
-          <div className="flex items-center mb-8  lg:w-3/4 w-full  "></div>
+        <div className="flex flex-col lg:mb-8 animated fadeIn sm:flex-row  h-screen">
+          <div className="flex items-center lg:mb-8  lg:w-3/4 w-full  "></div>
           <motion.div
             className="flex flex-col lg:py-24 mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16"
             initial={{ opacity: 0 }}
@@ -126,6 +167,7 @@ export default function Sectionone() {
             <p className="mb-2 text-sm font-semibold leading-none text-left text-orange-400 uppercase">
               Create.
             </p>
+            <span ref={myRef3}></span>
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
               Pen put to paper.
             </h3>
@@ -140,36 +182,15 @@ export default function Sectionone() {
               </span>
               Bread.
             </p>
+            <motion.img
+              layout
+              transition={spring}
+              src="Asset 119.svg"
+              className="lg:hidden md:hidden py-16"
+            />
           </motion.div>
         </div>
         {/* SECTION FOUR*/}
-
-        <div className="flex flex-col  animated fadeIn sm:flex-row ">
-          <div className="flex items-center  lg:w-3/4 w-full sm:order-last "></div>
-          <motion.div
-            className="flex flex-col py-24 mt-5   md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16"
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-
-              transition: { duration: 2 },
-            }}
-          >
-            <p className=" text-sm font-semibold leading-none text-left text-orange-400 uppercase">
-              Edit.
-            </p>
-            <span ref={myRef2}> </span>
-            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
-              Ensuring our writings hit the mark.
-            </h3>
-            <p className="mt-5 text-lg text-white text md:text-left  font-interr">
-              The writers will then edit their work, double-checking that the
-              spelling is in the correct country, the Surfer score is
-              sky-scraping, the relevant keywords are used, and the general
-              spelling and grammar are high quality.
-            </p>
-          </motion.div>
-        </div>
       </div>
     </>
   );
