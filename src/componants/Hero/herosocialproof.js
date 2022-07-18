@@ -99,7 +99,9 @@ export class Example extends React.Component {
                         {Tagline[current]} <br />
                         <br />
                       </div>
-                      <div className="text-xl font-inter">{Body[current]}</div>
+                      <div className="text-xl sm:block hidden font-inter">
+                        {Body[current]}
+                      </div>
                     </div>
                   </div>
                 </div>
