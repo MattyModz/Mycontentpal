@@ -30,7 +30,7 @@ export default function Sectionone() {
           <div className="    sm:block hidden  h-full relative ">
             <div
               layout
-              className={`flex justify-start border-4  absolute  w-full   ${
+              className={`flex justify-start  absolute  w-full   ${
                 myElementIsVisible2 ? " flex justify-end w-full " : ""
               }`}
             >
@@ -43,8 +43,8 @@ export default function Sectionone() {
               />
             </div>
 
-            <div className="absolute border-4  w-full border-red-400  h-1/2  ">
-              <div className="grid-cols-2 m:grid-cols-1 grid border-4 border-blue-400 h-full">
+            <div className="absolute  w-full   h-1/2  ">
+              <div className="grid-cols-2 m:grid-cols-1 grid  h-full">
                 <div className=" grid place-items-end h-full overflow-visible translate-x-12">
                   <motion.img
                     layout
@@ -56,7 +56,7 @@ export default function Sectionone() {
                         ? "opacity-0"
                         : ""
                     }`}
-                    src="Asset 119.svg"
+                    src="Asset 116.svg"
                   />
                 </div>
 

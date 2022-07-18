@@ -9,11 +9,11 @@ const Role = [
   "Founder & SEO Director",
 ];
 const Tagline = [
-  "Level up your content game with content that sells",
+  "Level up your content game with content that sells.",
   "One of the best content agencies we've used...",
-  "High quality, great value",
+  "High quality, great value. Craig is at the top of the content Game.",
 ];
-const Image = ["./jamesGregory.png", "JamesBrockbank.png", "AlexChapman.jpg"];
+const Image = ["./JamesGregory.png", "JamesBrockbank.png", "AlexChapman.jpg"];
 const Body = [
   "'I needed terrific content that aligns with my client's brand narrative and tone wand marketplace positioning. No other content provider understood that. But Craig did.",
   "'The quality of the content is great, it need minimal edits from our in-house team and the account management is strong, always keeping us updated. ",
@@ -56,7 +56,7 @@ export class Example extends React.Component {
       <div className="font-inter">
         <AnimatePresence initial={false} exitBeforeEnter>
           <motion.div
-            className="animated-text"
+            className="animated-text w-full"
             initial="hidden"
             animate={this.state.isVisible ? "visible" : "hidden"}
             exit="hidden"
@@ -65,7 +65,7 @@ export class Example extends React.Component {
           >
             <div className="w-full h-full p-5 bg-white rounded-2xl">
               <div className="flex flex-col w-full h-full   space-x-1">
-                <div className="flex w-full mt-2 space-x-2">
+                <div className="flex w-full h-full mt-2 space-x-2">
                   <div className="w-16 h-16 bg-gray-50 rounded-full">
                     <img src={Image[current]} class="rounded-full  w-16 h-16" />
                   </div>
@@ -95,7 +95,7 @@ export class Example extends React.Component {
                         {" "}
                         {Role[current]}
                       </div>
-                      <div className="lg:text-2xl">
+                      <div className="lg:text-2xl font-inter ">
                         {Tagline[current]} <br />
                         <br />
                       </div>
