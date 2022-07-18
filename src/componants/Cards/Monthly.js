@@ -5,7 +5,7 @@ export default function Monthly() {
     <motion.div
       className="lg:flex space-between relative  bg-white rounded-xl"
       initial={{ opacity: 0, x: 10 }}
-      whileInView={{ opacity: 1, x: 0, transition: { duration: 0.7 } }}
+      whileInView={{ opacity: 2, x: 0, transition: { duration: 0.7 } }}
       viewport={{ once: true }}
     >
       <div className="lg:border-r-2  py-4">
@@ -20,7 +20,9 @@ export default function Monthly() {
           >
             Get Started
           </a>
-          <p>Sign up at our portal </p>
+          <p className="py-2 text-orange-400 hover:text-orange-500 cursor-pointer">
+            Sign up at our portal{" "}
+          </p>
         </div>
       </div>
       <div className="py-4">
@@ -35,14 +37,16 @@ export default function Monthly() {
           >
             Get Started
           </a>
-          <p>Sign up at our portal </p>
+          <p className="py-2 text-orange-400 hover:text-orange-500 cursor-pointer">
+            Sign up at our portal{" "}
+          </p>
         </div>
       </div>
       <div className=" bg-gray-50 py-4 -mt-10 rounded-t-xl ">
         <div className="p-8 -mt-4 ">
           <a
             href="#_"
-            class="flex  items-center self-start justify-center  text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-orange-400 border border-transparent rounded-full shadow p-2 "
+            class="flex  items-center self-start justify-center  text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-gradient-to-br from-[#FB8753] to-[#FB7877] border border-transparent rounded-full shadow p-2 "
           >
             Most Popular
           </a>
@@ -56,7 +60,9 @@ export default function Monthly() {
           >
             Get Started
           </a>
-          <p>Sign up at our portal </p>
+          <p className="py-2 text-orange-400 hover:text-orange-500 cursor-pointer">
+            Sign up at our portal{" "}
+          </p>
         </div>
       </div>
       <div className="py-4 ">
@@ -71,7 +77,9 @@ export default function Monthly() {
           >
             Get Started
           </a>
-          <p>Sign up at our portal </p>
+          <p className="py-2 text-orange-400 hover:text-orange-500 cursor-pointer">
+            Sign up at our portal{" "}
+          </p>
         </div>
       </div>
     </motion.div>

@@ -11,7 +11,7 @@ const Heroopen = () => {
               that doesnt break the bank
             </span>
           </div>
-          <p class="relative font-interr justify-center flex z-20  mt-6 text-base text-white xl:text-xl  sm:text-center lg:text-center ">
+          <p class="relative font-interr justify-center flex   mt-6 text-base text-white xl:text-xl  sm:text-center lg:text-center ">
             Content researched prepped and delievered faster than you can say
             surfer SEO
           </p>

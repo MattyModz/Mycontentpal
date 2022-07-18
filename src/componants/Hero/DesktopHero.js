@@ -48,7 +48,7 @@ export default function DesktopHero() {
           viewport={{ once: true }}
         >
           <div className="w-full h-full p-4 pb-0 bg-white rounded-b-none shadow-sm rounded-2xl">
-            <div className="flex w-full h-full p-4 space-x-4 rounded-b-none bg-gray-50 rounded-2xl">
+            <div className="flex w-full h-full p-4 lg:space-x-4 rounded-b-none bg-gray-50 rounded-2xl">
               <div className="relative sm:block hidden flex flex-col justify-between w-32 h-full p-4 bg-white rounded-2xl">
                 <div className="relative flex justify-center w-full pt-3">
                   <div className="flex items-center justify-center w-10 h-10 rounded-full bg-orange-50">
@@ -75,7 +75,7 @@ export default function DesktopHero() {
                 </div>
                 <div className="relative flex items-center space-x-2">
                   <div className="flex-shrink-0 w-2 h-2 bg-gray-200 rounded-full"></div>
-                  <div className="w-full h-2 bg-gray-100 rounded-full"></div>
+                  <div className="w-full h-2 bg-gray-50 rounded-full"></div>
                 </div>
               </div>
               <div className="w-full h-full p-5 bg-white rounded-2xl">
@@ -88,10 +88,10 @@ export default function DesktopHero() {
                       />
                     </div>
                     <div className=" ">
-                      <div className="  rounded-full bg-gray-50 font-bold font-inter">
+                      <div className="  rounded-full bg-gray-50  font-bold font-inter">
                         James Gregory
                       </div>
-                      <div className="font-interr xsm:block hidden">
+                      <div className="font-interr xsm:block hidden py-1">
                         {" "}
                         Business growth at Searcharoo
                       </div>
@@ -103,20 +103,24 @@ export default function DesktopHero() {
                       <div className="flex mt-1 sm:block hidden">
                         <img
                           src="trustpilot-1 (1).svg"
-                          class="rounded-full mr-3 w-24 h-6"
+                          class="rounded-full mr-3 w-24 h-6 sm:hidden"
                         />
-                        <img src="stars-5-1.svg" class=" mr-3 w-24 h-6 mt-1 " />
+                        <img
+                          src="stars-5-1.svg"
+                          className="sm:hidden mr-3 w-24 h-6 mt-1 "
+                        />
                       </div>
                       <div className="flex justify-end"></div>
                       <div className="mx-auto px-8 py-2">
-                        <div className="font-interr font-bold">
+                        <div className="font-interr italic font-bold mb-1">
                           {" "}
                           Business growth at Searcharoo
                         </div>
-                        Level up your content game with content that sells I
-                        needed terrific content that aligns with my client's
-                        brand narrative and tone while simultaneously
-                        positioning them in a certain way in the marketplace.
+                        Level up your content game with content that sells{" "}
+                        <br />
+                        <br />
+                        My number one provider now for Surfer SEO-optimized
+                        money site content for the foreseeable future.
                       </div>
                     </div>
                     <div className=" hidden w-40 h-full bg-gray-50 rounded-xl"></div>

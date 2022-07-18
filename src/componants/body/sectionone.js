@@ -80,7 +80,7 @@ export default function Sectionone() {
         </div>
 
         <div className="flex flex-col   sm:flex-row  lg:h-screen lg:absolute container lg:mb-16 ">
-          <div className="flex items-center lg:mb-8  lg:w-3/4 w-full  shadow-full "></div>
+          <div className="flex items-center mb-8  lg:w-3/4 w-full  shadow-full "></div>
           <motion.div
             className="flex flex-col lg:py-24 mt-5 lg:mb-16 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16 h-screen "
             initial={{ opacity: 0 }}
@@ -121,7 +121,7 @@ export default function Sectionone() {
         <div className="flex flex-col lg:mb-8  lg:mt-72 sm:flex-row  h-screen ">
           <div className="flex items-center lg:mb-8 sm:order-last lg:w-3/4 w-full"></div>
           <motion.div
-            className="flex flex-col lg:mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16 h-screen lg:py-48"
+            className="flex flex-col s mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16 h-screen lg:py-48"
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -146,7 +146,7 @@ export default function Sectionone() {
             <motion.img
               layout
               transition={spring}
-              src="Asset 117.svg"
+              src="Asset 11.svg"
               className="lg:hidden md:hidden py-16"
             />
           </motion.div>
@@ -185,7 +185,7 @@ export default function Sectionone() {
             <motion.img
               layout
               transition={spring}
-              src="Asset 119.svg"
+              src="Asset 116.svg"
               className="lg:hidden md:hidden py-16"
             />
           </motion.div>

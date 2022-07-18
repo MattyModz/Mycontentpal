@@ -51,13 +51,13 @@ const resources = [
     name: "About",
     description:
       "See what meet-ups and other events we might be planning near you.",
-    href: "#",
+    href: "/about",
     icon: CalendarIcon,
   },
   {
     name: "Contact",
     description: "Understand how we take your privacy seriously.",
-    href: "#",
+    href: "contact",
     icon: ShieldCheckIcon,
   },
 ];
@@ -90,7 +90,7 @@ export default function Example() {
       >
         <div className="flex justify-between items-center   py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <a href="/">
               <img src="./logo.svg" height={100} width={100} />
             </a>
           </div>
@@ -102,7 +102,7 @@ export default function Example() {
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
             <a
-              href="#"
+              href="/"
               className=" text-white hover:bg-clip-text hover:text-transparent font-interr hover:bg-gradient-to-br from-[#FB8753] to-[#FB7877]"
             >
               Home
@@ -146,7 +146,7 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute text-interr z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
+                    <Popover.Panel className="absolute text-interr z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0 z-30">
                       <div className="rounded-lg shadow-lg    overflow-hidden">
                         <div className="relative grid gap-6 bg-body-dark px-5 py-6 sm:gap-8 sm:p-8">
                           {resources.map((item) => (
@@ -179,7 +179,7 @@ export default function Example() {
                                 >
                                   <a
                                     href={post.href}
-                                    className="font-interr text-white hover:text-gray-700"
+                                    className="font-interr text-white hover:text-gray-300"
                                   >
                                     {post.name}
                                   </a>
@@ -208,13 +208,13 @@ export default function Example() {
 
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
-              href="#"
+              href="https://mycontentpal.spp.io/login/"
               className="whitespace-nowrap text-base font-interr text-white hover:text-white"
             >
               Sign in
             </a>
             <a
-              href="#"
+              href="https://mycontentpal.spp.io/signup/"
               className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-inter text-white btnPrimary"
             >
               Get started
@@ -234,7 +234,7 @@ export default function Example() {
       >
         <Popover.Panel
           focus
-          className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+          className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-20"
         >
           <div className="rounded-lg shadow-lg  bg-body-dark  ">
             <div className="pt-5 pb-6 px-5">
@@ -268,7 +268,7 @@ export default function Example() {
             <div className="bg-gray-700 bg-opacity-10 rounded-xl py-6 px-5 space-y-6">
               <div>
                 <a
-                  href="#"
+                  href="https://mycontentpal.spp.io/signup/"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-inter text-white bg-gradient-to-br from-[#FB8753] to-[#FB7877]"
                 >
                   Get started
@@ -276,7 +276,7 @@ export default function Example() {
                 <p className="mt-6 text-center text-base font-inter text-white">
                   Existing customer?{" "}
                   <a
-                    href="#"
+                    href="https://mycontentpal.spp.io/login/"
                     className="bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877] "
                   >
                     Sign in
