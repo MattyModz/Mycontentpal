@@ -2,12 +2,12 @@
 const SANITY_PREVIEW_SECRET = "JZSLlav7SIse2qG";
 
 // Replace `remoteUrl` with your deployed Next.js site
-const remoteUrl = `https://mycontentpal-rose.vercel.app/`;
+const remoteUrl = `https://mycontentpal-rose.vercel.app`;
 const localUrl = `http://localhost:3000/post`;
 
 export default function resolveProductionUrl(doc) {
-  const baseUrl =
-    window.location.hostname === "localhost" ? localUrl : remoteUrl;
+  const baseUrl = remoteUrl;
+  // window.location.hostname === "localhost" ? localUrl : remoteUrl;
 
   const previewUrl = new URL(baseUrl);
 
