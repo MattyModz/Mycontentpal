@@ -127,15 +127,21 @@ export default function Footer() {
           © {new Date().getFullYear()}, My Content Pal
           <nav className="flex flex-col space-y-1.5 md:mt-0 mt-4 sm:flex-row sm:space-y-0 sm:space-x-3">
             <a
-              href="/terms-and-conditions"
+              href="/terms/terms-and-conditions"
               className="transition hover:text-white"
             >
               Terms of Service
             </a>
-            <a href="/privacy-policy" className="transition hover:text-white">
+            <a
+              href="/terms/privacy-policy"
+              className="transition hover:text-white"
+            >
               Privacy Policy
             </a>
-            <a href="/cookie-policy" className="transition hover:text-white">
+            <a
+              href="/terms/cookie-policy"
+              className="transition hover:text-white"
+            >
               Cookie Policy
             </a>
           </nav>
