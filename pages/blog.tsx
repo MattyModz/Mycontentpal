@@ -87,7 +87,7 @@ export default function Blog({ posts }: Props) {
               <h2 className="text-lg font-bold sm:text-xl md:text-2xl">
                 {post.title}
               </h2>
-              <p className="text-sm text-gray-500">{post.description}</p>
+
               <p className="pt-2 text-xs font-medium">
                 <a href="#_" className="mr-1 underline">
                   {post.author.name}

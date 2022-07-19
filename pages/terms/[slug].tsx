@@ -3,8 +3,8 @@ import { getClient, sanityClient } from "../../sanity";
 import { Pheripheal } from "../../typings";
 // import { motion } from "framer-motion";
 import PortableText from "react-portable-text";
-import Link from "next/link";
-import { urlFor, usePreviewSubscription } from "../../sanity";
+
+import { usePreviewSubscription } from "../../sanity";
 function filterDataToSingleItem(data: Pheripheal, preview) {
   if (!Array.isArray(data)) {
     return data;
