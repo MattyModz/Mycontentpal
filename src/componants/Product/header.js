@@ -40,7 +40,7 @@ export default function ProdHeader() {
 
   return (
     <section className="">
-      {/* <div class=" ">
+      <div class=" ">
         <h3 className="py-12 font-inter text-center text-white text-6xl ">
           <span className="bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877]">
             {Data[dataValue][0].title}
@@ -69,7 +69,7 @@ export default function ProdHeader() {
             Supporting Content
           </RoughNotation>
         </p>
-      </div> */}
+      </div>
     </section>
   );
 }
