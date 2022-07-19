@@ -6,12 +6,22 @@ export interface Post {
     name: string;
     image: string;
   };
-  description: string;
+
   mainImage: {
     asset: {
       url: string;
     };
   };
+  slug: {
+    current: string;
+  };
+  body: [object];
+}
+
+export interface Pheripheal {
+  _id: string;
+  title: string;
+  description: string;
   slug: {
     current: string;
   };

@@ -47,7 +47,7 @@ export default function Blogcard({ posts }) {
                   </h1>
                   <p className="pt-2 text-sm font-medium">
                     by{" "}
-                    <a href="#_" className="mr-1 underline">
+                    <a href="/about" className="mr-1 underline">
                       {post.author.name}
                     </a>{" "}
                     · <span className="mx-1">April 23rd, 2022</span> ·{" "}
@@ -84,7 +84,7 @@ export default function Blogcard({ posts }) {
               </h2>
               <p className="text-sm text-gray-500">{post.description}</p>
               <p className="pt-2 text-xs font-medium">
-                <a href="#_" className="mr-1 underline">
+                <a href="/about" className="mr-1 underline">
                   {post.author.name}
                 </a>{" "}
                 · <span className="mx-1">April 17, 2021</span> ·{" "}
