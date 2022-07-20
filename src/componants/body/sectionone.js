@@ -23,7 +23,7 @@ export default function Sectionone() {
     <>
       {/* card container */}
 
-      <div className="flex flex-col font-inter container py-20 px-8 bg-white text-black  ">
+      <div className="flex flex-col font-inter container py-20 px-8 bg-body-dark text-white  ">
         {/* end card container */}
         <div className=" sm:block hidden w-full container sticky top-40 h-screen">
           <div className="    sm:block hidden  h-full relative ">
@@ -71,7 +71,7 @@ export default function Sectionone() {
               competitor examples.
               <span ref={myRef1} />
             </p>
-            <div className="  relative w-full lg:hidden py-8 mt-8 md:hidden ">
+            <div className="  relative w-full lg:hidden  md:hidden ">
               <motion.img
                 layout
                 transition={spring}
