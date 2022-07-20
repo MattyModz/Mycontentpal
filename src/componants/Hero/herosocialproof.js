@@ -11,14 +11,14 @@ const Role = [
 const Tagline = [
   "Level up your content game with content that sells.",
   "One of the best content agencies we've used...",
-  "High quality, great value. Craig is at the top of the content Game.",
+  "Craig is at the top of the content Game.",
 ];
 const Image = ["./JamesGregory.png", "JamesBrockbank.png", "AlexChapman.jpg"];
 const Logo = ["./Searcharoo.png", "./Digitaloft.svg", "SeoPartners.svg"];
 const Body = [
   "'I needed terrific content that aligns with my client's brand narrative and tone wand marketplace positioning. No other content provider understood that. But Craig did.",
   "'The quality of the content is great, it need minimal edits from our in-house team and the account management is strong, always keeping us updated. ",
-  "'I’ve been using my content pal for about a year now and for good reason, they deliver. I’ve tried a number of other content companies in the past, but they’ve always fallen short. If you’re after quality content, at a good price, give MCP a go.",
+  "'I’ve been using my content pal for about a year now and for good reason, they deliver. If you’re after quality content, at a good price, give MCP a go.",
 ];
 const variants = {
   visible: {
@@ -54,7 +54,7 @@ export class Example extends React.Component {
     const { current } = this.state;
 
     return (
-      <div className="font-inter">
+      <div className="font-inter mb-5">
         <AnimatePresence initial={false} exitBeforeEnter>
           <motion.div
             className="animated-text w-full"
@@ -64,9 +64,9 @@ export class Example extends React.Component {
             variants={variants}
             key={current}
           >
-            <div className="w-full h-full p-5 bg-white border-4 border-gray-100 shadow-sm rounded-2xl">
-              <div className="flex flex-col w-full h-full   ">
-                <div className="flex w-full h-full mt-2 space-x-2">
+            <div className="w-full h-full p-5 bg-white mb-5 border-gray-100 shadow-sm rounded-2xl ">
+              <div className="flex flex-col w-full h-full    ">
+                <div className="flex w-full h-full mt-2  space-x-2">
                   <div className="w-16 h-16 bg-gray-500 rounded-full">
                     <img src={Image[current]} class="rounded-full  w-16 h-16" />
                   </div>
@@ -96,7 +96,7 @@ export class Example extends React.Component {
                         {Tagline[current]} <br />
                         <br />
                       </div>
-                      <div className="text-xl sm:block hidden font-interr">
+                      <div className="md:text-l sm:block hidden font-interr ">
                         {Body[current]}
                       </div>
                       <div className="font-interr italic font-bold mb-1">

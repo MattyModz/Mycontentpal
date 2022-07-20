@@ -3,10 +3,8 @@ import Marquee from "react-fast-marquee";
 const data = [
   { img: "./Digitaloft.svg" },
   { img: "./Searcharoo.png" },
-  { img: "./SeoPartners.svg" },
+  { img: "./SEOpartners.png" },
   { img: "./ArtPrintsVicky.png" },
-  { img: "./logo.svg" },
-  { img: "./test.svg" },
 ];
 
 export default function LogoMarquee() {
@@ -16,11 +14,11 @@ export default function LogoMarquee() {
         Trusted by leading brands and agencies
       </span>
       <Marquee gradient={false}>
-        <div className="flex mt-4">
+        <div className="flex mt-4 ">
           {data.map(function (d, idx) {
             return (
               <span key={idx}>
-                <img className="mr-16" src={d.img} />
+                <img className="mr-16 " src={d.img} width={250} height={150} />
               </span>
             );
           })}

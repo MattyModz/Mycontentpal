@@ -46,7 +46,7 @@ export default function Cards() {
             </p>
           </div>
         </div>
-        {isOnCard ? <Monthly /> : <Yearly />}
+        {isOnCard ? <Yearly /> : <Monthly />}
       </div>
     </section>
   );

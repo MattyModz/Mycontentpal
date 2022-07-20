@@ -77,7 +77,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Popover className="  font-interr bg-body-dark   " style={Z_INDEX}>
+    <Popover className="  font-inter bg-body-dark   " style={Z_INDEX}>
       <motion.div
         className="max-w-6xl mx-auto px-4 sm:px-6"
         initial={{ opacity: 0, y: -10 }}
@@ -88,13 +88,13 @@ export default function Example() {
         }}
         viewport={{ once: true }}
       >
-        <div className="flex justify-between items-center   py-4 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+        <div className="flex justify-between items-center  py-4 md:justify-start md:space-x-10">
+          <div className="flex justify-start lg:w-0 lg:flex-1 ">
             <a href="/">
               <img src="./logo.svg" height={100} width={100} />
             </a>
           </div>
-          <div className="-mr-2 -my-2 md:hidden">
+          <div className="-mr-2 -my-2 md:hidden ">
             <Popover.Button className=" rounded-md p-2 inline-flex items-center justify-center text-white ">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />

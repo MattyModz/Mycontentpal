@@ -23,9 +23,9 @@ export default function Sectionone() {
     <>
       {/* card container */}
 
-      <div className="flex flex-col font-inter container py-20 px-8 bg-body-dark text-white  ">
+      <div className="flex flex-col font-inter  container py-20  bg-body-dark text-white  ">
         {/* end card container */}
-        <div className=" sm:block hidden w-full container sticky top-40 h-screen">
+        <div className="lg:block hidden w-full container sticky top-40 h-screen ">
           <div className="    sm:block hidden  h-full relative ">
             <div
               layout
@@ -44,10 +44,10 @@ export default function Sectionone() {
           </div>
         </div>
 
-        <div className="flex flex-col   sm:flex-row  lg:h-screen lg:absolute container lg:mb-16 ">
-          <div className="flex items-center lg:mb-8  lg:w-3/4 w-full  shadow-full "></div>
+        <div className="md:flex-cols-1 lg:flex   sm:flex-row    lg:h-screen lg:absolute container lg:mb-8  ">
+          <div className="flex items-center lg:mb-8   w-full  shadow-full "></div>
           <motion.div
-            className="flex flex-col lg:py-24 mt-5 lg:mb-16 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16 h-screen "
+            className="flex flex-col lg:py-24 mt-5  lg:mb-16 md:mt-0  lg:w-3/4 sm:pr-16 h-screen "
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -59,7 +59,7 @@ export default function Sectionone() {
               Prep.
             </p>
 
-            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl py-8 bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877] ">
+            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl py-8  ">
               Understand your content creation aim.
             </h3>
             <p className="mt-5 text-lg  text md:text-left font-interr py-8">
@@ -71,7 +71,7 @@ export default function Sectionone() {
               competitor examples.
               <span ref={myRef1} />
             </p>
-            <div className="  relative w-full lg:hidden  md:hidden ">
+            <div className="  relative w-full lg:hidden py-8 mt-8  ">
               <motion.img
                 layout
                 transition={spring}
@@ -82,7 +82,7 @@ export default function Sectionone() {
                 layout
                 transition={spring}
                 src="Asset 116.svg "
-                className="lg:hidden absolute  md:hidden py-8  "
+                className="lg:hidden absolute   py-8  "
               />
             </div>
           </motion.div>
@@ -90,10 +90,10 @@ export default function Sectionone() {
 
         {/* SECTION TWO*/}
 
-        <div className="flex flex-col lg:mb-8 mt-8  lg:mt-72 sm:flex-row  h-screen ">
-          <div className="flex items-center lg:mb-8 sm:order-last lg:w-3/4 w-full"></div>
+        <div className="lg:flex md:flex-cols-1 lg:mb-8 mt-8   sm:flex-row  h-screen ">
+          <div className="flex items-center lg:mb-8 sm:order-last lg:w-3/4 "></div>
           <motion.div
-            className="flex flex-col  sm:mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16 h-screen lg:py-48"
+            className="flex flex-col  sm:mt-5 mb-8 md:mt-0  lg:w-7/12  h-screen lg:py-48"
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -115,7 +115,7 @@ export default function Sectionone() {
               videos, reading statements on social media and scanning through
               questions and answers on sites such as Quora.
             </p>
-            <div className="  relative w-full lg:hidden py-8 mt-8 md:hidden ">
+            <div className="  relative w-full lg:hidden py-8 mt-8 ">
               <motion.img
                 layout
                 transition={spring}
@@ -126,17 +126,17 @@ export default function Sectionone() {
                 layout
                 transition={spring}
                 src="Asset 117.svg "
-                className="lg:hidden absolute py-8 md:hidden shadow-sm  "
+                className="lg:hidden absolute py-8  shadow-sm  "
               />
             </div>
           </motion.div>
         </div>
         {/* SECTION THREE*/}
 
-        <div className="flex flex-col lg:mb-8 animated fadeIn sm:flex-row  h-screen ">
-          <div className="flex items-center lg:mb-8  lg:w-3/4 w-full  "></div>
+        <div className="flex flex-cols-1 lg:mb-8 mt-8 sm:flex-row  h-screen ">
+          <div className="flex items-center lg:mb-8  lg:w-3/4   "></div>
           <motion.div
-            className="flex flex-col lg:py-24 mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16"
+            className="flex flex-col lg:py-24 mt-5 mb-8 md:mt-0  lg:w-7/12 sm:pr-16"
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -162,7 +162,7 @@ export default function Sectionone() {
               </span>
               Bread.
             </p>
-            <div className="  relative w-full lg:hidden py-8 mt-8 md:hidden ">
+            <div className="  relative w-full lg:hidden py-8 mt-8  ">
               <motion.img
                 layout
                 transition={spring}
@@ -173,7 +173,7 @@ export default function Sectionone() {
                 layout
                 transition={spring}
                 src="Asset 119.svg "
-                className="lg:hidden absolute p-8 md:hidden shadow-sm "
+                className="lg:hidden absolute p-8  shadow-sm "
               />
             </div>
           </motion.div>
