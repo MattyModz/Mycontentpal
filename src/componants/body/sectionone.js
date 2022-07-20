@@ -90,10 +90,10 @@ export default function Sectionone() {
 
         {/* SECTION TWO*/}
 
-        <div className="flex flex-col lg:mb-8  lg:mt-72 sm:flex-row  h-screen ">
+        <div className="flex flex-col lg:mb-8 mt-8  lg:mt-72 sm:flex-row  h-screen ">
           <div className="flex items-center lg:mb-8 sm:order-last lg:w-3/4 w-full"></div>
           <motion.div
-            className="flex flex-col s mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16 h-screen lg:py-48"
+            className="flex flex-col  sm:mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16 h-screen lg:py-48"
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
