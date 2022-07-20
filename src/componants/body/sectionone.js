@@ -23,7 +23,7 @@ export default function Sectionone() {
     <>
       {/* card container */}
 
-      <div className="flex flex-col font-inter  container py-20  bg-body-dark text-white  ">
+      <div className="flex flex-col font-inter  container py-20 p-8 bg-body-dark text-white  ">
         {/* end card container */}
         <div className="lg:block hidden w-full container sticky top-40 h-screen ">
           <div className="    sm:block hidden  h-full relative ">
