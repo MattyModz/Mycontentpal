@@ -12,20 +12,6 @@ export default function Tweets() {
             <h2 class="text-black mt-2 text-2xl sm:text-4xl tracking-tight font-bold sm:font-extrabold font-interr md:text-5xl dark:text-white">
               Don't just take our word for it.
             </h2>
-            <div class="mt-1 md:mt-4 items-center flex text-orange-400">
-              <svg
-                class="w-8 h-8 sm:block hidden mr-1.5 mt-0.5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
           </div>
           <div class="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-6 w-full">
             <div class="col-span-4 space-y-6">

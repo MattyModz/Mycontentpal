@@ -6,6 +6,7 @@ const data = [
   { img: "./SeoPartners.svg" },
   { img: "./ArtPrintsVicky.png" },
   { img: "./logo.svg" },
+  { img: "./test.svg" },
 ];
 
 export default function LogoMarquee() {

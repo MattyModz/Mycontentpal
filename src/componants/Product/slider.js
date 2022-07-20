@@ -9,30 +9,30 @@ const Serviceslider = () => {
   const Data = [
     [
       //the data you have used, you just have to change data here if you need
-      { price: "0.06", words: 1000, posts: 1 },
-      { price: "0.06", words: 5000, posts: 3 },
-      { price: "0.06", words: 10000, posts: 5 },
-      { price: "0.06", words: 20000, posts: 10 },
-      { price: "0.06", words: 25000, posts: 13 },
-      { price: "0.06", words: 50000, posts: 25 },
-      { price: "0.06", words: 75000, posts: 38 },
-      { price: "0.06", words: 100000, posts: 50 },
-      { price: "0.06", words: 150000, posts: 75 },
-      { price: "0.06", words: 200000, posts: 100 },
+      { price: "0.06", words: 1000, posts: 1, img: "./icons-sm.svg" },
+      { price: "0.06", words: 5000, posts: 3, img: "./icons-sm.svg" },
+      { price: "0.06", words: 10000, posts: 5, img: "./icons-sm.svg" },
+      { price: "0.06", words: 20000, posts: 10, img: "./icons-md.svg" },
+      { price: "0.06", words: 25000, posts: 13, img: "./icons-md.svg" },
+      { price: "0.06", words: 50000, posts: 25, img: "./icons-md.svg" },
+      { price: "0.06", words: 75000, posts: 38, img: "./icons-md.svg" },
+      { price: "0.06", words: 100000, posts: 50, img: "./icons-lg.svg" },
+      { price: "0.06", words: 150000, posts: 75, img: "./icons-lg.svg" },
+      { price: "0.06", words: 200000, posts: 100, img: "./icons-lg.svg" },
     ],
 
     [
       //the data you have used, you just have to change data here if you need
-      { price: "0.11", words: 1000, posts: 1 },
-      { price: "0.11", words: 5000, posts: 3 },
-      { price: "0.09", words: 10000, posts: 5 },
-      { price: "0.09", words: 20000, posts: 10 },
-      { price: "0.08", words: 25000, posts: 13 },
-      { price: "0.08", words: 50000, posts: 25 },
-      { price: "0.06", words: 75000, posts: 38 },
-      { price: "0.06", words: 100000, posts: 50 },
-      { price: "0.05", words: 150000, posts: 75 },
-      { price: "0.05", words: 200000, posts: 100 },
+      { price: "0.11", words: 1000, posts: 1, img: "icons-sm.svg" },
+      { price: "0.11", words: 5000, posts: 3, img: "./icons-sm.svg" },
+      { price: "0.09", words: 10000, posts: 5, img: "./icons-sm.svg" },
+      { price: "0.09", words: 20000, posts: 10, img: "./icons-md.svg" },
+      { price: "0.08", words: 25000, posts: 13, img: "./icons-md.svg" },
+      { price: "0.08", words: 50000, posts: 25, img: "./icons-md.svg" },
+      { price: "0.06", words: 75000, posts: 38, img: "./icons-md.svg" },
+      { price: "0.06", words: 100000, posts: 50, img: "./icons-lg.svg" },
+      { price: "0.05", words: 150000, posts: 75, img: "./icons-lg.svg" },
+      { price: "0.05", words: 200000, posts: 100, img: "./icons-lg.svg" },
     ],
   ];
 
@@ -109,45 +109,49 @@ const Serviceslider = () => {
             ${Data[dataValue][value].price * Data[dataValue][value].words}
           </h4>
         </div>
+
         <p className="py-2 text-white text-xl flex justify-center font-bold">
           Or about {Data[dataValue][value].posts} blog posts
         </p>
-        {/* <div className="mb-8">
+        <div className="flex justify-center">
+          <img src={Data[dataValue][value].img} />
+        </div>
+        <div className="mb-8">
           <a
             href="#_"
             class="block w-full py-6 mt-5 text-xl font-inter text-center text-white bg-gradient-to-br from-[#FB8753] to-[#FB7877] rounded-full xl:text-2xl xl:w-11/12 xl:mt-10"
           >
             Purchase Content
           </a>
-        </div> */}
+        </div>
       </div>
     </div>
   );
 };
 export default Serviceslider;
 
-//   { price: "0.06", words: "1,000", posts: 1 },
-//   { price: "0.06", words: "5,000", posts: 3 },
-//   { price: "0.06", words: "10,000", posts: 5 },
-//   { price: "0.06", words: "20,000", posts: 10 },
-//   { price: "0.06", words: "25,000", posts: 13 },
-//   { price: "0.06", words: "50,000", posts: 25 },
-//   { price: "0.06", words: "75,000", posts: 38 },
-//   { price: "0.06", words: "100,000", posts: 50 },
-//   { price: "0.06", words: "150,000", posts: 75 },
-//   { price: "0.06", words: "200,000", posts: 100 },
+//   { price: "0.06", words: "1,000", posts: 1 , img: "./icons-lg.svg"},
+//   { price: "0.06", words: "5,000", posts: 3 , img: "./icons-lg.svg"},
+//   { price: "0.06", words: "10,000", posts: 5 , img: "./icons-lg.svg"},
+//   { price: "0.06", words: "20,000", posts: 10, img: "./icons-lg.svg" },
+//   { price: "0.06", words: "25,000", posts: 13, img: "./icons-lg.svg" },
+//   { price: "0.06", words: "50,000", posts: 25, img: "./icons-lg.svg" },
+//   { price: "0.06", words: "75,000", posts: 38, img: "./icons-lg.svg" },
+//   { price: "0.06", words: "100,000", posts: 50, img: "./icons-lg.svg" },
+//   { price: "0.06", words: "150,000", posts: 75, img: "./icons-lg.svg" },
+//   { price: "0.06", words: "200,000", posts: 10, img: "./icons-lg.svg"0 },
 // ],
 
 // [
 //   //the data you have used, you just have to change data here if you need
-//   { price: "0.11", words: "1000", posts: 1 },
-//   { price: "0.11", words: "5000", posts: 3 },
-//   { price: "0.09", words: "10,000", posts: 5 },
-//   { price: "0.09", words: "20,000", posts: 10 },
-//   { price: "0.08", words: "25,000", posts: 13 },
-//   { price: "0.08", words: "50,000", posts: 25 },
-//   { price: "0.06", words: "75,000", posts: 38 },
-//   { price: "0.06", words: "100,000", posts: 50 },
-//   { price: "0.05", words: "150,000", posts: 75 },
-//   { price: "0.05", words: "200,000", posts: 100 },
+//   { price: "0.11", words: "1000", posts: 1 , img: "./icons-lg.svg"},
+//   { price: "0.11", words: "5000", posts: 3 , img: "./icons-lg.svg"},
+//   { price: "0.09", words: "10,000", posts: 5 , img: "./icons-lg.svg"},
+//   { price: "0.09", words: "20,000", posts: 10, img: "./icons-lg.svg" },
+//   { price: "0.08", words: "25,000", posts: 13, img: "./icons-lg.svg" },
+//   { price: "0.08", words: "50,000", posts: 25, img: "./icons-lg.svg" },
+//   { price: "0.06", words: "75,000", posts: 38, img: "./icons-lg.svg" },
+//   { price: "0.06", words: "100,000", posts: 50, img: "./icons-lg.svg" },
+//   { price: "0.05", words: "150,000", posts: 75, img: "./icons-lg.svg" },
+//   { price: "0.05", words: "200,000", posts: 10, img: "./icons-lg.svg"0 },
 // ],

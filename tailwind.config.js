@@ -1,3 +1,20 @@
+const plugin = require("tailwindcss/plugin");
+
+// Rotate X utilities
+const rotateX = plugin(function ({ addUtilities }) {
+  addUtilities({
+    ".rotate-x-10": {
+      transform: "rotateX(10deg)",
+    },
+    ".rotate-y-15": {
+      transform: "rotateY(15deg)",
+    },
+    ".-rotate-y-15": {
+      transform: "rotateY(-15deg)",
+    },
+  });
+});
+
 module.exports = {
   content: [
     "./src/componants/**/*.{js,jsx,ts,tsx}",

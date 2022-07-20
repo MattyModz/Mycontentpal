@@ -42,7 +42,6 @@ function Post({ data, preview }) {
     <main className="p-5 mx-auto bg-body-dark text-white">
       {preview && <Link href="/api/exit-preview">Preview Mode Activated!</Link>}
       <article className="container ">
-        {" "}
         <motion.div
           className=""
           initial={{ opacity: 0, y: -20 }}

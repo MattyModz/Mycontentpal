@@ -77,7 +77,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Popover className="  font-inter bg-body-dark   " style={Z_INDEX}>
+    <Popover className="  font-interr bg-body-dark   " style={Z_INDEX}>
       <motion.div
         className="max-w-6xl mx-auto px-4 sm:px-6"
         initial={{ opacity: 0, y: -10 }}

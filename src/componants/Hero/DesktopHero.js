@@ -50,25 +50,10 @@ export default function DesktopHero() {
           }}
           viewport={{ once: true }}
         >
-          <div className="w-full h-full p-4 pb-0 bg-white rounded-b-none shadow-sm rounded-2xl">
-            <div className="flex w-full h-full p-4 lg:space-x-4 rounded-b-none bg-gray-50 rounded-2xl">
-              <div className="relative sm:block hidden flex flex-col justify-between w-32 h-full p-4 bg-white rounded-2xl">
-                <div className="relative flex justify-center w-full pt-3"></div>
-                <div className="relative space-y-4">
-                  <div className="h-2 rounded-full bg-gray-50"></div>
-                  <div className="h-2 rounded-full bg-gray-50"></div>
-                  <div className="h-2 rounded-full bg-gray-50"></div>
-                </div>
-                <div className="relative flex items-center space-x-2">
-                  <div className="flex-shrink-0 w-2 h-2 bg-gray-200 rounded-full"></div>
-                  <div className="w-full h-2 bg-gray-50 rounded-full"></div>
-                </div>
-              </div>
-              <Example />
-              <div className=" hidden w-40 h-full bg-gray-50 rounded-xl"></div>
-            </div>
-          </div>
+          {" "}
+          <Example />
         </motion.div>
+
         <motion.div
           className="hidden w-1/5 h-60 lg:block md:-mt-20"
           initial={{ opacity: 0, y: 40 }}

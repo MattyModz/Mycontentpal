@@ -14,6 +14,7 @@ const Tagline = [
   "High quality, great value. Craig is at the top of the content Game.",
 ];
 const Image = ["./JamesGregory.png", "JamesBrockbank.png", "AlexChapman.jpg"];
+const Logo = ["./Searcharoo.png", "./Digitaloft.svg", "SeoPartners.svg"];
 const Body = [
   "'I needed terrific content that aligns with my client's brand narrative and tone wand marketplace positioning. No other content provider understood that. But Craig did.",
   "'The quality of the content is great, it need minimal edits from our in-house team and the account management is strong, always keeping us updated. ",
@@ -63,22 +64,22 @@ export class Example extends React.Component {
             variants={variants}
             key={current}
           >
-            <div className="w-full h-full p-5 bg-white rounded-2xl">
-              <div className="flex flex-col w-full h-full   space-x-1">
+            <div className="w-full h-full p-5 bg-white border-4 border-gray-100 shadow-sm rounded-2xl">
+              <div className="flex flex-col w-full h-full   ">
                 <div className="flex w-full h-full mt-2 space-x-2">
-                  <div className="w-16 h-16 bg-gray-50 rounded-full">
+                  <div className="w-16 h-16 bg-gray-500 rounded-full">
                     <img src={Image[current]} class="rounded-full  w-16 h-16" />
                   </div>
                   <div className=" ">
-                    <div className="  rounded-full bg-gray-50  font-bold font-inter">
+                    <div className="  rounded-full bg-white  font-bold font-inter">
                       {info[current]}
                     </div>
                     <div className="font-interr xsm:block hidden py-1"> </div>
-                    <img src="stars-5-1.svg" class=" mr-3 w-24 h-6 mt-1 " />
+                    <img src="stars-5-1.svg" class=" w-24 h-6 mt-1 " />
                   </div>
                 </div>
-                <div className="flex flex-grow w-full h-full mt-3 space-x-4 font-inter">
-                  <div className="w-full h-full pl-4 bg-gray-50 rounded-xl ">
+                <div className="flex flex-grow w-full h-full mt-3  font-inter">
+                  <div className="w-full h-full  bg-white rounded-xl ">
                     <div className="flex mt-1 sm:block hidden">
                       <img
                         src="trustpilot-1 (1).svg"
@@ -91,16 +92,16 @@ export class Example extends React.Component {
                     </div>
                     <div className="flex justify-end"></div>
                     <div className="mx-auto px-8 py-2">
-                      <div className="font-interr italic font-bold mb-1">
-                        {" "}
-                        {Role[current]}
-                      </div>
-                      <div className="lg:text-2xl font-inter ">
+                      <div className="lg:text-2xl text-2xl font-inter ">
                         {Tagline[current]} <br />
                         <br />
                       </div>
-                      <div className="text-xl sm:block hidden font-inter">
+                      <div className="text-xl sm:block hidden font-interr">
                         {Body[current]}
+                      </div>
+                      <div className="font-interr italic font-bold mb-1">
+                        {" "}
+                        {Role[current]}
                       </div>
                     </div>
                   </div>

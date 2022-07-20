@@ -72,15 +72,19 @@ export default function Blog({ posts }: Props) {
               }}
               viewport={{ once: true }}
             >
-              <Link key={post._id} href={`/post/${post.slug.current}`} passHref>
-                <img
-                  src={urlFor(post.mainImage).url()!}
-                  alt=""
-                  width={500}
-                  height={500}
-                  className="flex rounded-t-xl mb-4"
-                />
-              </Link>
+              <div className=" ">
+                <Link
+                  key={post._id}
+                  href={`/post/${post.slug.current}`}
+                  passHref
+                >
+                  <img
+                    src={urlFor(post.mainImage).url()!}
+                    alt=""
+                    className=" w-3/4 rounded-t-xl mb-4"
+                  />
+                </Link>
+              </div>
               <div className="bg-orange-400  items-center px-3  py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
                 <span>Content writing</span>
               </div>
