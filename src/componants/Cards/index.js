@@ -15,7 +15,7 @@ export default function Cards() {
 
   return (
     <section
-      className="bg-body-dark   
+      className="bg-body-dark  container 
       "
     >
       <div className="py-8 container">
@@ -23,7 +23,7 @@ export default function Cards() {
           Can we scratch your content itch?
         </h3>
         <h3 className="text-6xl text-white font-inter font-bold text-center py-2 ">
-          Your monthly content subscription
+          Content subscription
           <span className="text-orange-500">.</span>
         </h3>
       </div>
