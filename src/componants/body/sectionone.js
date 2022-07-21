@@ -7,6 +7,7 @@ export default function Sectionone() {
   const { ref: myRef1, inView: myElementIsVisible1 } = useInView({});
   const { ref: myRef2, inView: myElementIsVisible2 } = useInView({});
   const { ref: myRef3, inView: myElementIsVisible3 } = useInView({});
+  const { ref: myRef4, inView: myElementIsVisible4 } = useInView({});
   // const { ref: myRef4, inView: myElementIsVisible4 } = useInView({});
 
   const spring = {
@@ -55,7 +56,9 @@ export default function Sectionone() {
                 layout
                 transition={spring}
                 className={`object-fill absolute   w-1/2 p-24  sm:block   rounded-2xl   ${
-                  myElementIsVisible1 ? "opacity-100" : "opacity-0"
+                  myElementIsVisible1 && !myElementIsVisible2
+                    ? "opacity-100"
+                    : "opacity-0"
                 }`}
                 src="Asset 116.svg"
               />
@@ -63,7 +66,9 @@ export default function Sectionone() {
                 layout
                 transition={spring}
                 className={`object-fill absolute   w-1/2  sm:block p-24  rounded-2xl   ${
-                  myElementIsVisible2 ? "opacity-100" : "opacity-0"
+                  myElementIsVisible2 && !myElementIsVisible3
+                    ? "opacity-100"
+                    : "opacity-0"
                 }`}
                 src="Asset 117.svg"
               />
@@ -71,7 +76,10 @@ export default function Sectionone() {
                 layout
                 transition={spring}
                 className={`object-fill absolute   w-1/2  sm:block p-24  rounded-2xl   ${
-                  myElementIsVisible3 ? "opacity-100" : "opacity-0"
+                  (!myElementIsVisible1 && !myElementIsVisible2) ||
+                  myElementIsVisible3
+                    ? "opacity-100"
+                    : "opacity-0"
                 }`}
                 src="Asset 119.svg"
               />
@@ -107,7 +115,7 @@ export default function Sectionone() {
               competitor examples.
               <span ref={myRef1} />
             </p>
-            <div className="  relative w-full lg:hidden py-8 mt-8  ">
+            <div className="md:w-full relative w-full lg:hidden py-8 mt-8  ">
               <motion.img
                 layout
                 transition={spring}
@@ -151,7 +159,7 @@ export default function Sectionone() {
               videos, reading statements on social media and scanning through
               questions and answers on sites such as Quora.
             </p>
-            <div className="  relative w-full lg:hidden py-8 mt-8 ">
+            <div className=" md:w-full relative w-full  lg:hidden py-8 mt-8 ">
               <motion.img
                 layout
                 transition={spring}
@@ -169,7 +177,7 @@ export default function Sectionone() {
         </div>
         {/* SECTION THREE*/}
 
-        <div className="flex flex-cols-1  mt-8 sm:flex-row  h-screen ">
+        <div className="flex flex-cols-1   mt-8 sm:flex-row  h-screen ">
           <div className="flex items-center   lg:w-3/4   "></div>
           <motion.div
             className="flex flex-col lg:py-24 mt-5 mb-8 md:mt-0  lg:w-7/12 sm:pr-16"
@@ -198,7 +206,8 @@ export default function Sectionone() {
               </span>
               Bread.
             </p>
-            <div className="  relative w-full lg:hidden py-8 mt-8  ">
+            <span ref={myRef4}></span>
+            <div className="md:w-full   relative w-full lg:hidden py-8 mt-8  ">
               <motion.img
                 layout
                 transition={spring}
