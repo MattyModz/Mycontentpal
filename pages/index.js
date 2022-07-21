@@ -13,8 +13,6 @@ export default function Home({ posts }) {
     <>
       <Hero />
 
-      <Body />
-
       <Product />
 
       <Tweets />

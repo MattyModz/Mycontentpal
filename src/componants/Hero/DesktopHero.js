@@ -64,7 +64,7 @@ export default function DesktopHero() {
                   <div className="w-full h-2 bg-gray-50 rounded-full"></div>
                 </div>
               </div>
-
+              <Example />
               <div className=" hidden w-40 h-full bg-gray-50 rounded-xl"></div>
             </div>
           </div>
