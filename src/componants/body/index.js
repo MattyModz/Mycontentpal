@@ -4,7 +4,6 @@ export default function Body() {
   return (
     <>
       <section className=" ">
-        <Intro />
         <Sectionone />
       </section>
     </>
