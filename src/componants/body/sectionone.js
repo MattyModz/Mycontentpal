@@ -23,14 +23,14 @@ export default function Sectionone() {
     <>
       {/* card container */}
 
-      <div className="flex flex-col font-inter  container py-20 p-8  text-black bg-gray-100  ">
+      <div className="flex flex-col font-inter  container py-20 p-8  text-white bg-body-dark ">
         {/* end card container */}
         <div className="lg:block hidden w-full container sticky top-40 h-screen ">
-          <div className="    sm:block hidden border-4  h-full relative ">
+          <div className="    sm:block hidden   h-full relative ">
             {/* Back panel */}
             <div
               layout
-              className={`flex abs justify-start border-4 border-orange-300  absolute  w-full   ${
+              className={`flex abs justify-start   absolute  w-full   ${
                 myElementIsVisible2 ? " flex justify-end w-full " : ""
               }`}
             >
@@ -46,7 +46,7 @@ export default function Sectionone() {
             {/* Assets */}
             <div
               layout
-              className={`flex justify-start border-4 border-orange-700  relative h-1/2 w-full   ${
+              className={`flex justify-start  0  relative h-1/2 w-full   ${
                 myElementIsVisible2 ? " flex justify-end w-full " : ""
               }`}
             >
@@ -54,7 +54,7 @@ export default function Sectionone() {
               <motion.img
                 layout
                 transition={spring}
-                className={`object-fill absolute   w-1/4  sm:block  border-4 rounded-2xl   ${
+                className={`object-fill absolute   w-1/4  sm:block   rounded-2xl   ${
                   myElementIsVisible2 ? "opacity-0" : ""
                 }`}
                 src="Asset 116.svg"
@@ -62,7 +62,7 @@ export default function Sectionone() {
               <motion.img
                 layout
                 transition={spring}
-                className={`object-fill absolute   w-1/4  sm:block  border-4 rounded-2xl   ${
+                className={`object-fill absolute   w-1/4  sm:block   rounded-2xl   ${
                   myElementIsVisible2 ? "opacity-100" : ""
                 }`}
                 src="Asset 119.svg"
