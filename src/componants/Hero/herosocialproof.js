@@ -9,7 +9,7 @@ const Role = [
   "Founder & SEO Director",
 ];
 const Tagline = [
-  "Level up your content game with content that sells.",
+  "Level up your content game with MCP",
   "One of the best content agencies we've used...",
   "Craig is at the top of the content Game.",
 ];

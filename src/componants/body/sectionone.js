@@ -118,8 +118,8 @@ export default function Sectionone() {
 
         {/* SECTION TWO*/}
 
-        <div className="lg:flex md:flex-cols-1 lg:mb-8 mt-8   sm:flex-row  h-screen ">
-          <div className="flex items-center lg:mb-8 sm:order-last lg:w-3/4 "></div>
+        <div className="lg:flex md:flex-cols-1  mt-8   sm:flex-row  h-screen ">
+          <div className="flex items-center  sm:order-last lg:w-3/4 "></div>
           <motion.div
             className="flex flex-col  sm:mt-5 mb-8 md:mt-0  lg:w-7/12  h-screen lg:py-48"
             initial={{ opacity: 0 }}
@@ -161,8 +161,8 @@ export default function Sectionone() {
         </div>
         {/* SECTION THREE*/}
 
-        <div className="flex flex-cols-1 lg:mb-8 mt-8 sm:flex-row  h-screen ">
-          <div className="flex items-center lg:mb-8  lg:w-3/4   "></div>
+        <div className="flex flex-cols-1  mt-8 sm:flex-row  h-screen ">
+          <div className="flex items-center   lg:w-3/4   "></div>
           <motion.div
             className="flex flex-col lg:py-24 mt-5 mb-8 md:mt-0  lg:w-7/12 sm:pr-16"
             initial={{ opacity: 0 }}
