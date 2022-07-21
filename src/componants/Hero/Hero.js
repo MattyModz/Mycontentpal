@@ -8,7 +8,7 @@ const Heroopen = () => {
           <div className="font-inter  ">
             High-quality content{" "}
             <span className=" bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877]">
-              that doesnt break the bank
+              that doesn't break the bank
             </span>
           </div>
           <p class="relative font-interr justify-center flex   mt-6 text-base text-white xl:text-xl  sm:text-center lg:text-center ">
