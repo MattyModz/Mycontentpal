@@ -54,16 +54,24 @@ export default function Sectionone() {
               <motion.img
                 layout
                 transition={spring}
-                className={`object-fill absolute   w-1/4  sm:block   rounded-2xl   ${
-                  myElementIsVisible2 ? "opacity-0" : ""
+                className={`object-fill absolute   w-1/2 p-24  sm:block   rounded-2xl   ${
+                  myElementIsVisible1 ? "opacity-100" : "opacity-0"
                 }`}
                 src="Asset 116.svg"
               />
               <motion.img
                 layout
                 transition={spring}
-                className={`object-fill absolute   w-1/4  sm:block   rounded-2xl   ${
-                  myElementIsVisible2 ? "opacity-100" : ""
+                className={`object-fill absolute   w-1/2  sm:block p-24  rounded-2xl   ${
+                  myElementIsVisible2 ? "opacity-100" : "opacity-0"
+                }`}
+                src="Asset 117.svg"
+              />
+              <motion.img
+                layout
+                transition={spring}
+                className={`object-fill absolute   w-1/2  sm:block p-24  rounded-2xl   ${
+                  myElementIsVisible3 ? "opacity-100" : "opacity-0"
                 }`}
                 src="Asset 119.svg"
               />
@@ -87,10 +95,10 @@ export default function Sectionone() {
               Prep.
             </p>
 
-            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl py-8  ">
+            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl s  ">
               Understand your content creation aim.
             </h3>
-            <p className="mt-5 text-lg  text md:text-left font-interr py-8">
+            <p className="s text-lg  text md:text-left font-interr ">
               Our prepping team will follow your brief meticulously. They’ll
               follow our Prepping Guide to outline your article, so it looks
               attractive and simple for your readers. They also use tools such
@@ -136,7 +144,7 @@ export default function Sectionone() {
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl ">
               A Great grasp of your niche
             </h3>
-            <p className="mt-5 text-lg  text md:text-left  font-interr">
+            <p className=" text-lg  text md:text-left  font-interr">
               Don’t worry if you have a tedious subject. Our writers won’t begin
               writing until they’ve researched your niche and become an expert
               themselves. This includes reading articles, watching YouTube
