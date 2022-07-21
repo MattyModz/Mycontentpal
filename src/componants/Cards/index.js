@@ -23,7 +23,6 @@ export default function Cards() {
           Can we scratch your content itch?
         </h3>
         <h3 className="text-6xl text-white font-inter font-bold text-center py-2 ">
-          Content subscription
           <span className="text-orange-500">.</span>
         </h3>
       </div>
