@@ -23,13 +23,14 @@ export default function Sectionone() {
     <>
       {/* card container */}
 
-      <div className="flex flex-col font-inter  container py-20 p-8 bg-body-dark text-white  ">
+      <div className="flex flex-col font-inter  container py-20 p-8  text-black   ">
         {/* end card container */}
         <div className="lg:block hidden w-full container sticky top-40 h-screen ">
           <div className="    sm:block hidden  h-full relative ">
+            {/* Back panel */}
             <div
               layout
-              className={`flex justify-start  absolute  w-full   ${
+              className={`flex abs justify-start   absolute  w-full border-4 border-red-400    ${
                 myElementIsVisible2 ? " flex justify-end w-full " : ""
               }`}
             >
@@ -37,12 +38,47 @@ export default function Sectionone() {
               <motion.img
                 layout
                 transition={spring}
-                className="object-fill  rotate-x-10 w-1/2 sm:block hidden top-0 left-0 shadow-lg bg-blend-multiply rounded-2xl"
+                className="object-fill border-4 rotate-x-10 w-1/2 sm:block hidden top-0 left-0 shadow-lg bg-blend-multiply rounded-2xl"
                 src="BackPanel.svg"
+              />
+            </div>
+
+            {/* Assets */}
+            <div
+              layout
+              className={` border-4 border-yellow-300   relative h-3/4 w-full   ${
+                myElementIsVisible2 ? " flex justify-end w-full " : ""
+              }`}
+            >
+              {" "}
+              <motion.img
+                layout
+                transition={spring}
+                className={`object-fill    w-1/4   sm:block   rounded-2xl   ${
+                  myElementIsVisible1 ? "opacity-100" : "opacity-0"
+                }`}
+                src="Asset 116.svg"
+              />
+              <motion.img
+                layout
+                transition={spring}
+                className={`object-fill absolute   w-1/4  sm:block   rounded-2xl   ${
+                  !myElementIsVisible2 ? "opacity-0" : "opacity-100"
+                }`}
+                src="Asset 119.svg"
+              />
+              <motion.img
+                layout
+                transition={spring}
+                className={`object-fill absolute   w-1/4  sm:block   rounded-2xl   ${
+                  !myElementIsVisible3 ? "opacity-0" : "opacity-100"
+                }`}
+                src="Asset 117.svg"
               />
             </div>
           </div>
         </div>
+        {/* End assets -  */}
 
         <div className="md:flex-cols-1 lg:flex   sm:flex-row    lg:h-screen lg:absolute container lg:mb-8  ">
           <div className="flex items-center lg:mb-8   w-full  shadow-full "></div>
@@ -55,13 +91,14 @@ export default function Sectionone() {
               transition: { duration: 2 },
             }}
           >
-            <p className="p-y8 text-sm font-semibold leading-none text-left text-orange-400 uppercase">
+            <p className=" text-sm font-semibold leading-none text-left text-orange-400 uppercase">
               Prep.
             </p>
 
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl py-8  ">
               Understand your content creation aim.
             </h3>
+            <span ref={myRef1} />
             <p className="mt-5 text-lg  text md:text-left font-interr py-8">
               Our prepping team will follow your brief meticulously. They’ll
               follow our Prepping Guide to outline your article, so it looks
@@ -69,7 +106,6 @@ export default function Sectionone() {
               as Text Razor and create the content structure on Surfer SEO,
               which brings the best keywords for your headline compared to
               competitor examples.
-              <span ref={myRef1} />
             </p>
             <div className="  relative w-full lg:hidden py-8 mt-8  ">
               <motion.img
@@ -101,14 +137,16 @@ export default function Sectionone() {
               transition: { duration: 2 },
             }}
           >
-            <p className=" text-sm lg:mb-10 font-semibold leading-none text-left text-orange-400 uppercase">
+            <p className="  text-sm font-semibold leading-none text-left text-orange-400 uppercase">
               Research.
             </p>
-            <span ref={myRef2}></span>
-            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl ">
+
+            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl py-8 ">
               A Great grasp of your niche
+              <span ref={myRef2}></span>
             </h3>
-            <p className="mt-5 text-lg  text md:text-left  font-interr">
+
+            <p className="mt-5 text-lg  text md:text-left py-8  font-interr">
               Don’t worry if you have a tedious subject. Our writers won’t begin
               writing until they’ve researched your niche and become an expert
               themselves. This includes reading articles, watching YouTube
@@ -147,11 +185,12 @@ export default function Sectionone() {
             <p className="mb-2 text-sm font-semibold leading-none text-left text-orange-400 uppercase">
               Create.
             </p>
-            <span ref={myRef3}></span>
+
             <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
               Pen put to paper.
             </h3>
-            <p className="mt-5 mb-5 text-lg  text md:text-left font-interr">
+            <span ref={myRef3}></span>
+            <p className="mt-5 mb-5 py-8 text-lg  text md:text-left font-interr">
               Then our super squad of writers put their powers to work. You will
               always have an introduction, conclusion and FAQs unless
               specifically asked not to have them. Our writers are professionals

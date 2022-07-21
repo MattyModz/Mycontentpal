@@ -47,7 +47,7 @@ export default function Blog({ posts }: Props) {
                     </svg>
                     <span>Featured</span>
                   </div>
-                  <h1 className="text-4xl w-full font-bold py-2 leading-none lg:text-5xl xl:text-6xl">
+                  <h1 className="text-4xl font-bold py-2 leading-none lg:text-5xl xl:text-6xl">
                     <a href="#_">{post.title}.</a>
                   </h1>
                   <p className="pt-2 text-sm font-medium">
@@ -82,10 +82,10 @@ export default function Blog({ posts }: Props) {
               <div className="bg-orange-400  items-center px-3  py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
                 <span>Content writing</span>
               </div>
-              <h2 className="text-lg font-bold sm:text-xl md:text-2xl">
+              <h2 className="text-lg font-bold sm:text-xl md:text-2xl py-1.5">
                 {post.title}
               </h2>
-
+              <p className="text-sm text-gray-500">{post.description}</p>
               <p className="pt-2 text-xs font-medium">
                 <a href="#_" className="mr-1 underline">
                   {post.author.name}

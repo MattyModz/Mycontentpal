@@ -24,20 +24,19 @@ const Z_INDEX = {
 const solutions = [
   {
     name: "Home",
-    description:
-      "Get a better understanding of where your traffic is coming from.",
+    description: "Foolproof Proof reading...",
     href: "/",
     icon: ChartBarIcon,
   },
   {
     name: "Keyword Research ",
-    description: "Speak directly to your customers in a more meaningful way.",
+    description: "What is the cost to start and affiliate website in 2022?.",
     href: "#",
     icon: CursorClickIcon,
   },
   {
     name: "Blog",
-    description: "Your customers' data will be safe and secure.",
+    description: "Buying your First site in SEO.",
     href: "/blog",
     icon: BookmarkAltIcon,
   },
@@ -62,13 +61,21 @@ const resources = [
   },
 ];
 const recentPosts = [
-  { id: 1, name: "Boost your conversion rate", href: "#" },
+  {
+    id: 1,
+    name: "What is the cost to start and affiliate website in 2022?",
+    href: "/post/what-is-the-cost",
+  },
   {
     id: 2,
-    name: "How to use search engine optimization to drive traffic to your site",
-    href: "#",
+    name: "Foolproof Proofreading: Our Secret to Quality Analysis",
+    href: "/post/foolproof-proofreading-our-secret-to-quality-analysis",
   },
-  { id: 3, name: "Improve your customer experience", href: "#" },
+  {
+    id: 3,
+    name: "Buying your First site in SEO",
+    href: "/post/buying-your-first-site-in-seo",
+  },
 ];
 
 function classNames(...classes) {

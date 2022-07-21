@@ -23,7 +23,8 @@ export default function Cards() {
           Can we scratch your content itch?
         </h3>
         <h3 className="text-6xl text-white font-inter font-bold text-center py-2 ">
-          Your monthly content Pal<span className="text-orange-500">.</span>
+          Your monthly content subscription
+          <span className="text-orange-500">.</span>
         </h3>
       </div>
       <div className="w-full container px-8 pb-6 py-8">

@@ -34,16 +34,16 @@ function Pheripheal({ data, preview }) {
   const page = filterDataToSingleItem(previewData, preview);
 
   return (
-    <main className="p-5 mx-auto bg-body-dark text-white h-screen">
+    <main className=" mx-auto bg-body-dark text-white h-screen">
       {/* {preview && <Link href="/api/exit-preview">Preview Mode Activated!</Link>} */}
-      <article className="container flex justify-center font-inter text-4xl lg:text-6xl py-8">
+      <article className="container flex justify-center font-inter text-2xl lg:text-6xl py-8">
         {page?.title && <h1>{page.title}</h1>}
       </article>
       <PortableText
         className="p-24 container"
         dataset={process.env.NEXT_PUBLIC_SANITY_DATASET!}
         projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!}
-        content={page.body}
+        content={page?.body}
         serializers={{
           h1: (props: any) => (
             <h1 className="text-6xl font-bold my-5" {...props} />

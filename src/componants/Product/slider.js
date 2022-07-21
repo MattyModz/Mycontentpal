@@ -118,7 +118,7 @@ const Serviceslider = () => {
         </div>
         <div className="mb-8">
           <a
-            href="#_"
+            href="https://mycontentpal.spp.io/signup/"
             class="block w-full py-6 mt-5 text-xl font-inter text-center text-white bg-gradient-to-br from-[#FB8753] to-[#FB7877] rounded-full xl:text-2xl xl:w-11/12 xl:mt-10"
           >
             Purchase Content

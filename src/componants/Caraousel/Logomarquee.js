@@ -4,7 +4,7 @@ const data = [
   { img: "./Digitaloft.svg" },
   { img: "./Searcharoo.png" },
   { img: "./SEOpartners.png" },
-  { img: "./ArtPrintsVicky.png" },
+  { img: "./APV.png" },
 ];
 
 export default function LogoMarquee() {

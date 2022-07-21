@@ -29,7 +29,7 @@ export default function Blogcard({ posts }) {
                   />
                 </Link>
               </div>
-              <div className="flex flex-col items-start justify-center w-full h-full py-6 mb-6 md:mb-0 md:w-full">
+              <div className="flex flex-col items-start justify-center w-full h-full py-6 mb-6 md:mb-0 md:w-full lg:w-1/2">
                 <div className="flex flex-col items-start justify-center h-full space-y-3 transform md:pl-10 lg:pl-16 md:space-y-5 ">
                   <div className="bg-orange-500 flex items-center pl-2 pr-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block ">
                     <svg
