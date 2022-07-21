@@ -9,8 +9,8 @@ interface Props {
 
 export default function Blog({ posts }: Props) {
   return (
-    <section className=" text-white bg-body-dark font-inerr p-4">
-      <div className="container bg-body-dark lg:grid grid-cols-2   gap-3 ">
+    <section className=" text-white bg-body-dark font-inerr p-4 -8">
+      <div className="container bg-body-dark lg:grid grid-cols-2 mt-24   gap-3 ">
         {posts.map((post, index) =>
           index === 0 ? (
             <motion.div
@@ -47,7 +47,7 @@ export default function Blog({ posts }: Props) {
                     </svg>
                     <span>Featured</span>
                   </div>
-                  <h1 className="text-4xl font-bold py-2 leading-none lg:text-5xl xl:text-6xl">
+                  <h1 className="text-4xl w-full font-bold py-2 leading-none lg:text-5xl xl:text-6xl">
                     <a href="#_">{post.title}.</a>
                   </h1>
                   <p className="pt-2 text-sm font-medium">
@@ -63,7 +63,7 @@ export default function Blog({ posts }: Props) {
             </motion.div>
           ) : (
             <motion.div
-              className="w-full  py-12"
+              className="w-full  py-12 sm:p-12"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{
                 opacity: 1,
@@ -76,9 +76,7 @@ export default function Blog({ posts }: Props) {
                 <img
                   src={urlFor(post.mainImage).url()!}
                   alt=""
-                  width={500}
-                  height={500}
-                  className="flex rounded-t-xl mb-4"
+                  className="flex rounded-t-xl mb-8 "
                 />
               </Link>
               <div className="bg-orange-400  items-center px-3  py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">

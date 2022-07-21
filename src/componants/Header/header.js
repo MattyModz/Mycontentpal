@@ -1,7 +1,7 @@
 import Nav from "./nav";
 
 import React from "react";
-const Header = () => {
+const Header = ({ posts }) => {
   return (
     <>
       <head>
@@ -42,7 +42,6 @@ const Header = () => {
           />
         </React.Fragment> */}
       </head>
-      <Nav />
     </>
   );
 };
