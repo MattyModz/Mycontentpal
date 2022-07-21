@@ -64,10 +64,10 @@ export class Example extends React.Component {
             variants={variants}
             key={current}
           >
-            <div className="w-full h-full p-5 bg-white mb-5 border-gray-100 shadow-sm rounded-2xl ">
+            <div className="w-full h-full p-5 bg-white mb-5  shadow-sm rounded-2xl ">
               <div className="flex flex-col w-full h-full    ">
                 <div className="flex w-full h-full mt-2  space-x-2">
-                  <div className="w-16 h-16 bg-gray-500 rounded-full">
+                  <div className="w-16 h-16  rounded-full">
                     <img src={Image[current]} class="rounded-full  w-16 h-16" />
                   </div>
                   <div className=" ">
