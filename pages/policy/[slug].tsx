@@ -1,9 +1,4 @@
-import {
-  getClient,
-  sanityClient,
-  urlFor,
-  usePreviewSubscription,
-} from "../../sanity";
+import { getClient, sanityClient, usePreviewSubscription } from "../../sanity";
 import React from "react";
 import PortableText from "react-portable-text";
 function filterDataToSingleItem(data, preview) {

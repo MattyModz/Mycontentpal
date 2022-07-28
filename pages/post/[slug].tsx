@@ -9,7 +9,6 @@ import {
 import { Post } from "../../typings";
 import { motion } from "framer-motion";
 import PortableText from "react-portable-text";
-import Link from "next/link";
 
 function filterDataToSingleItem(data: Post, preview) {
   console.log(data);
