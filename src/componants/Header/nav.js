@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 import {
   BookmarkAltIcon,
   CalendarIcon,
@@ -98,7 +98,7 @@ export default function Example() {
         <div className="flex justify-between items-center  py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1 ">
             <a href="/">
-              <img src="./logo.svg" height={100} width={100} />
+              <Image src="/MCPlogo.svg" height={100} width={100} />
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden ">

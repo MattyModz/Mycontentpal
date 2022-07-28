@@ -12,12 +12,10 @@ export default function Home({ posts }) {
   return (
     <>
       <Hero />
-
       <Body />
-
       <Product />
-
       <Tweets />
+
       <Cards />
 
       <Blogcard posts={posts} />

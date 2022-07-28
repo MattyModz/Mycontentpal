@@ -1,11 +1,12 @@
-import { GetStaticProps } from "next";
-import { getClient, sanityClient } from "../../sanity";
-import { Pheripheal } from "../../typings";
-// import { motion } from "framer-motion";
+import {
+  getClient,
+  sanityClient,
+  urlFor,
+  usePreviewSubscription,
+} from "../../sanity";
+import React from "react";
 import PortableText from "react-portable-text";
-
-import { usePreviewSubscription } from "../../sanity";
-function filterDataToSingleItem(data: Pheripheal, preview) {
+function filterDataToSingleItem(data, preview) {
   if (!Array.isArray(data)) {
     return data;
   }
@@ -13,6 +14,7 @@ function filterDataToSingleItem(data: Pheripheal, preview) {
   if (data.length === 1) {
     return data[0];
   }
+
   if (preview) {
     return data.find((item) => item._id.startsWith(`drafts.`)) || data[0];
   }
@@ -20,30 +22,29 @@ function filterDataToSingleItem(data: Pheripheal, preview) {
   return data[0];
 }
 
-function Pheripheal({ data, preview }) {
-  console.log(data);
+function Policys({ data, preview }) {
   const { data: previewData } = usePreviewSubscription(data?.query, {
     params: data?.queryParams ?? {},
     // The hook will return this on first render
     // This is why it's important to fetch *draft* content server-side!
-    initialData: data?.page,
+    initialData: data?.policy,
     // The passed-down preview context determines whether this function does anything
     enabled: preview,
   });
 
-  const page = filterDataToSingleItem(previewData, preview);
+  const policy = filterDataToSingleItem(previewData, preview);
 
   return (
     <main className=" mx-auto bg-body-dark text-white h-screen">
       {/* {preview && <Link href="/api/exit-preview">Preview Mode Activated!</Link>} */}
       <article className="container flex justify-center font-inter text-2xl lg:text-6xl py-8">
-        {page?.title && <h1>{page.title}</h1>}
+        {policy?.title && <h1>{policy.title}</h1>}
       </article>
       <PortableText
         className="p-24 container"
         dataset={process.env.NEXT_PUBLIC_SANITY_DATASET!}
         projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!}
-        content={page?.body}
+        content={policy?.body}
         serializers={{
           h1: (props: any) => (
             <h1 className="text-6xl font-bold my-5" {...props} />
@@ -68,21 +69,21 @@ function Pheripheal({ data, preview }) {
   );
 }
 
-export default Pheripheal;
+export default Policys;
 
 export const getStaticPaths = async () => {
-  const query = `*[_type == "pheripheal"]{
+  const query = `*[_type == "policy"]{
     _id,
     slug {
         current
     }
 }`;
 
-  const page = await sanityClient.fetch(query);
+  const policys = await sanityClient.fetch(query);
 
-  const paths = page.map((pheripheal: Pheripheal) => ({
+  const paths = policys.map((policy) => ({
     params: {
-      slug: pheripheal.slug.current,
+      slug: policy.slug.current,
     },
   }));
 
@@ -92,19 +93,14 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({
-  params,
-  preview = false,
-}) => {
-  const query = `*[_type == "pheripheal" && slug.current == $slug]{
-    _id,
- 
-    title,
-  
- description,
+export const getStaticProps = async ({ params, preview = false }) => {
+  const query = `*[_type == "policy" && slug.current == $slug]{
+ _id,
 
+ title,
+ body,
  slug,
- body
+
 }`;
 
   const queryParams = { slug: params.slug };
@@ -117,14 +113,13 @@ export const getStaticProps: GetStaticProps = async ({
     };
   }
 
-  const page = filterDataToSingleItem(data, preview);
+  const policy = filterDataToSingleItem(data, preview);
 
   return {
     props: {
-      data: { page, query, queryParams },
+      preview,
+      data: { policy, query, queryParams },
     },
     revalidate: 60,
   };
 };
-
-//  urlFor;

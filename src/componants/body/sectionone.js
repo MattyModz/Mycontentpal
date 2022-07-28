@@ -16,7 +16,6 @@ export default function Sectionone() {
     damping: 11,
   };
 
-  console.log(myElementIsVisible1, myElementIsVisible2);
   //  className={`flex justify-end sticky top-0    ${
   //                 myElementIsVisible1 ? "flex justify-start" : ""
   //               }`}
@@ -103,10 +102,10 @@ export default function Sectionone() {
               Prep.
             </p>
 
-            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl s  ">
+            <h3 className="mt-5 text-2xl sm:text-left md:text-4xl s  ">
               Understand your content creation aim.
             </h3>
-            <p className="s text-lg  text md:text-left font-interr ">
+            <p className="mt-5 text-l  text md:text-left font-interr ">
               Our prepping team will follow your brief meticulously. They’ll
               follow our Prepping Guide to outline your article, so it looks
               attractive and simple for your readers. They also use tools such
@@ -145,14 +144,14 @@ export default function Sectionone() {
               transition: { duration: 2 },
             }}
           >
-            <p className=" text-sm lg:mb-10 font-semibold leading-none text-left text-orange-400 uppercase">
+            <p className="mt-5 text-sm  font-semibold leading-none text-left text-orange-400 uppercase">
               Research.
             </p>
             <span ref={myRef2}></span>
-            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl ">
+            <h3 className="mt-5 text-2xl sm:text-left md:text-4xl ">
               A Great grasp of your niche
             </h3>
-            <p className=" text-lg  text md:text-left  font-interr">
+            <p className="mt-5 text-l  text md:text-left  font-interr">
               Don’t worry if you have a tedious subject. Our writers won’t begin
               writing until they’ve researched your niche and become an expert
               themselves. This includes reading articles, watching YouTube
@@ -192,10 +191,10 @@ export default function Sectionone() {
               Create.
             </p>
             <span ref={myRef3}></span>
-            <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
+            <h3 className="mt-5 text-2xl sm:text-left md:text-4xl">
               Pen put to paper.
             </h3>
-            <p className="mt-5 mb-5 text-lg  text md:text-left font-interr">
+            <p className="mt-5  text-l  text md:text-left font-interr">
               Then our super squad of writers put their powers to work. You will
               always have an introduction, conclusion and FAQs unless
               specifically asked not to have them. Our writers are professionals

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { GetStaticProps } from "next";
 import {
   getClient,
@@ -10,7 +11,8 @@ import { motion } from "framer-motion";
 import PortableText from "react-portable-text";
 import Link from "next/link";
 
-function filterDataToSingleItem(data, preview) {
+function filterDataToSingleItem(data: Post, preview) {
+  console.log(data);
   if (!Array.isArray(data)) {
     return data;
   }
@@ -40,7 +42,6 @@ function Post({ data, preview }) {
 
   return (
     <main className="p-5 mx-auto bg-body-dark text-white">
-      {preview && <Link href="/api/exit-preview">Preview Mode Activated!</Link>}
       <article className="container ">
         <motion.div
           className=""
@@ -61,18 +62,20 @@ function Post({ data, preview }) {
           )}
           <div className="flex items-center space-x-2">
             {post?.author.image && (
-              <img
+              <Image
                 className="h-10 w-10 rounded-full"
                 src={urlFor(post.author.image).url()!}
                 alt=""
+                width={50}
+                height={50}
               />
             )}
             <p className="font-extralight text-sm">
               Blog post by{" "}
               {post?.author.name && (
-                <span className="text-orange-600">{post?.author.name}</span>
+                <span className="text-orange-600">{post.author.name}</span>
               )}{" "}
-              - published at {new Date(post?._createdAt).toLocaleDateString()}
+              - published at {new Date(post._createdAt).toLocaleDateString()}
             </p>
           </div>
         </motion.div>

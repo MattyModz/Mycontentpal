@@ -60,7 +60,7 @@ const Serviceslider = () => {
               {...props}
               style={{
                 ...props.style,
-                height: "11px",
+                height: "15px",
                 width: "100%",
                 borderRadius: "8px",
                 backgroundImage: "linear-gradient(to right, red , yellow)",

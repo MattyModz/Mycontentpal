@@ -19,7 +19,7 @@ export interface Post {
   body: [object];
 }
 
-export interface Pheripheal {
+export interface Terms {
   _id: string;
   title: string;
   description: string;

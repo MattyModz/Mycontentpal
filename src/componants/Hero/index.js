@@ -5,7 +5,7 @@ import DesktopHero from "./DesktopHero";
 export default function Hero() {
   return (
     <>
-      <div className=" h-full">
+      <div className=" h-full bg-white">
         <Heroopen />
         <DesktopHero />
         <Herologo />

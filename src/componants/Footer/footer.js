@@ -3,7 +3,7 @@ import Link from "next/link";
 // import axios from "axios";
 // import { motion } from "framer-motion";
 // import { useRouter } from "next/router";
-
+import Image from "next/image";
 export default function Footer() {
   //  const { register, handleSubmit } = useForm();
   //  const router = useRouter();
@@ -76,7 +76,7 @@ export default function Footer() {
             href="#_"
             className="text-white font-extrabold uppercase text- flex items-center"
           >
-            <img src="./logo.svg" height={100} width={100} />
+            <Image src="/MCPlogo.svg" height={100} width={100} />
           </a>
           <nav className="flex flex-col flex-wrap sm:items-center space-y-4 text-xs font-medium text-gray-500 sm:flex-row sm:space-x-3  lg:space-x-4 sm:space-y-0">
             <a href="/" className="hover:text-white">
@@ -127,19 +127,19 @@ export default function Footer() {
           © {new Date().getFullYear()}, My Content Pal
           <nav className="flex flex-col space-y-1.5 md:mt-0 mt-4 sm:flex-row sm:space-y-0 sm:space-x-3">
             <a
-              href="/terms/terms-and-conditions"
+              href="/policy/terms-and-conditions"
               className="transition hover:text-white"
             >
               Terms of Service
             </a>
             <a
-              href="/terms/privacy-policy"
+              href="/policy/privacy-policy"
               className="transition hover:text-white"
             >
               Privacy Policy
             </a>
             <a
-              href="/terms/cookie-policy"
+              href="/policy/cookie-policy"
               className="transition hover:text-white"
             >
               Cookie Policy

@@ -41,19 +41,15 @@ export default function ProdHeader() {
   return (
     <section className="">
       <div class=" ">
-        <h3 className="py-12 font-inter text-center text-white text-6xl ">
+        {/* <h3 className="py-12 font-inter text-center text-white text-6xl ">
           <span className="bg-clip-text text-transparent bg-gradient-to-br from-[#FB8753] to-[#FB7877]">
             {Data[dataValue][0].title}
           </span>{" "}
           content...
-        </h3>
+        </h3> */}
       </div>
       <div className="flex  justify-center py-4">
-        <p className="p-4 -rotate-6 text-white text-xl font-bold font-writing">
-          <RoughNotation type="underline" show={!isOn}>
-            Money Content
-          </RoughNotation>
-        </p>
+        <p className="p-4  text-white text-xl font-bold ">Money Content</p>
 
         <div
           className="switch "
@@ -64,10 +60,8 @@ export default function ProdHeader() {
         >
           <motion.div className="handle" layout transition={spring} />
         </div>
-        <p className="p-4 rotate-6 text-white text-xl font-bold  font-writing ">
-          <RoughNotation type="underline" show={isOn}>
-            Supporting Content
-          </RoughNotation>
+        <p className="p-4  text-white text-xl font-bold   ">
+          Supporting Content
         </p>
       </div>
     </section>

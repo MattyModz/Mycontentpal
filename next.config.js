@@ -22,6 +22,7 @@ module.exports = {
       allowedImageWordPressDomain,
       "via.placeholder.com",
       "2.gravatar.com",
+      "cdn.sanity.io",
     ],
   },
 };

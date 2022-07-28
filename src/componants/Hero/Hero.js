@@ -1,5 +1,3 @@
-import Trust from "../Trustpilot";
-import Herovideo from "./Herovideo";
 const Heroopen = () => {
   return (
     <>
